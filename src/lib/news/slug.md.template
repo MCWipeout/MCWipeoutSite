@@ -1,0 +1,9 @@
+---
+title: "News Title"
+date: "YYYY-MM-DD"
+image: "/path/to/img.png"
+description: "News Description"
+---
+Insert Text Here
+
+Once done filling out the template, rename the file to an appropriate name and add ".md".
