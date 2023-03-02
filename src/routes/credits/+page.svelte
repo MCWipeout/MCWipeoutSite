@@ -1,12 +1,6 @@
 <script>
-	import WipeoutHero from "$lib/components/WipeoutHero.svelte";
+	import WipeoutHero from '$lib/components/WipeoutHero.svelte';
 	const staff = [
-		{
-			name: 'bumpyJake',
-			href: 'https://solo.to/bumpyjake',
-			description: 'Administrator',
-			avatarPath: '/avatar/avatar-bumpyjake.jpg'
-		},
 		{
 			name: 'J48',
 			href: 'https://solo.to/j48',
@@ -14,24 +8,22 @@
 			avatarPath: '/avatar/avatar-j48.jpg'
 		},
 		{
-			name: 'Aylias',
-			href: 'https://twitter.com/Aylias_',
-			avatarPath: '/avatar/avatar-aylias.jpg'
+			name: 'bumpyJake',
+			href: 'https://solo.to/bumpyjake',
+			description: 'Administrator',
+			avatarPath: '/avatar/avatar-bumpyjake.jpg'
 		},
 		{
 			name: 'theinnerdomain',
 			href: 'https://twitter.com/Theinnerdomain',
-			avatarPath: '/avatar/avatar-theinnerdomain.jpg'
+			avatarPath: '/avatar/avatar-theinnerdomain.jpg',
+			description: 'Sound Developer'
 		},
 		{
 			name: 'JoeyCapollo',
 			href: 'https://twitter.com/JoeyCapollo',
-			avatarPath: '/avatar/avatar-joeycapollo.jpg'
-		},
-		{
-			name: 'Deuclroix',
-			href: 'https://twitter.com/crystvlforest',
-			avatarPath: '/avatar/avatar-deuclroix.png'
+			avatarPath: '/avatar/avatar-joeycapollo.jpg',
+			description: 'Creative Director'
 		}
 	];
 
@@ -61,7 +53,7 @@
 <div class="hero py-16 bg-base-200">
 	<div class="hero-content flex-col">
 		<h1 class="text-5xl font-bold grow mb-4">Staff</h1>
-		<div class="flex flex-row flex-wrap gap-x-2 gap-y-8 justify-around max-w-4xl">
+		<div class="flex flex-row flex-wrap gap-x-2 gap-y-8 justify-around max-w-6xl">
 			{#each staff as { name, href, description, avatarPath }}
 				<div class="flex flex-col items-center w-64">
 					<img src={avatarPath} class="h-24 w-24 mask mask-circle" alt="{name} avatar" />
