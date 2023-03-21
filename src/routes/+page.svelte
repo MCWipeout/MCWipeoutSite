@@ -30,13 +30,45 @@
 			<p class="py-6">
 				Minecraft Wipeout is a YouTube series organized by J48Gaming and Zylops, first uploaded on
 				Jan 1 2022, creators from all over the globe are invited to participate and potentially win
-				prizes IF they make it in the fastest time possible.
+				prizes IF they make it in the fastest time possible. <br /> -- More Desciption needed here
 			</p>
 			<button class="btn btn-primary">Get Started</button>
 		</div>
 	</div>
 </div>
-<div class="hero py-16 bg-base-100">
+<div class="hero bg-base-100">
+	<div class="hero-content flex flex-wrap w-full">
+		<h1 class="text-5xl font-bold basis-full text-center">Follow us on our socials!</h1>
+		<div class="card card-compact w-96 bg-base-100 shadow-xl flex-grow">
+			<figure class="h-20 bg bg-blue-500 p-4">
+				<img src="/social/discord.png" alt="YouTube logo" class="h-full" />
+			</figure>
+			<div class="card-body">
+				<h2 class="card-title">Discord</h2>
+				<p>
+					Join our community to discuss MC Wipeout and help out! We occasionally post tester signups
+					here.
+				</p>
+				<div class="card-actions justify-end">
+					<button class="btn btn-primary">Join</button>
+				</div>
+			</div>
+		</div>
+		<div class="card card-compact w-96 bg-base-100 shadow-xl ">
+			<figure class="h-20 bg-red-700 p-4">
+				<img src="/social/youtube.png" alt="YouTube logo" class="h-full" />
+			</figure>
+			<div class="card-body">
+				<h2 class="card-title">YouTube</h2>
+				<p>Subscribe to get best highlights and clips of the event!</p>
+				<div class="card-actions justify-end">
+					<button class="btn btn-primary">Subscribe</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="hero py-16 bg-base-200">
 	<div class="hero-content flex flex-col items-stretch lg:flex-row w-full">
 		<div class="flex flex-col lg:basis-2/3 flex-wrap">
 			<h1 class="text-5xl font-bold grow mb-4 text-center">Screenshots</h1>
@@ -74,7 +106,7 @@
 		</div>
 		<div class="lg:basis-1/3 w-full h-full flex flex-col">
 			<h1 class="text-5xl font-bold grow mb-4 text-center">Tweets</h1>
-			<div class="overflow-y-scroll rounded-xl">
+			<div class="rounded-xl overflow-hidden">
 				<a
 					class="twitter-timeline"
 					data-height={screenshotHeroHeight}
