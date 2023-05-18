@@ -1,0 +1,54 @@
+[
+	{
+		"name": "J48",
+		"href": "https://solo.to/j48",
+		"description": "Organizer",
+		"avatarPath": "/avatar/avatar-j48.jpg"
+	},
+	{
+		"name": "bumpyJake",
+		"href": "https://solo.to/bumpyjake",
+		"description": "Co-organizer",
+		"avatarPath": "/avatar/avatar-bumpyjake.png"
+	},
+	{
+		"name": "Stormbits",
+		"description": "Developer",
+		"avatarPath": "/avatar/avatar-stormbits.png"
+	},
+	{
+		"name": "Marius",
+		"description": "Builder",
+		"avatarPath": "/avatar/avatar-marius.png"
+	},
+	{
+		"name": "V4LK",
+		"description": "Art"
+	},
+	{
+		"name": "dGc",
+		"description": "Builder & Sound Design",
+		"avatarPath": "/avatar/avatar-dgc.png"
+	},
+	{
+		"name": "theinnerdomain",
+		"href": "https://twitter.com/Theinnerdomain",
+		"avatarPath": "/avatar/avatar-theinnerdomain.jpg",
+		"description": "Sound Design"
+	},
+	{
+		"name": "soup",
+		"description": "Graphics",
+		"avatarPath": "/avatar/avatar-soup.png"
+	},
+	{
+		"name": "Deuclorix",
+		"description": "Builder",
+		"avatarPath": "/avatar/avatar-deuclroix.png"
+	},
+	{
+		"name": "Aylias",
+		"description": "Developer",
+		"avatarPath": "/avatar/avatar-aylias.jpg"
+	}
+]

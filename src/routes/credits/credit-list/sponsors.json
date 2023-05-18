@@ -1,0 +1,20 @@
+[
+	{
+		"name": "solo.to",
+		"href": "https://solo.to/",
+		"avatarPath": "/logo/logo-soloto.png",
+		"description": "Create easily sharable landing pages for all your social media."
+	},
+	{
+		"name": "MCProHosting",
+		"href": "https://mcprohosting.com/",
+		"avatarPath": "/logo/logo-mcprohosting.jpg",
+		"description": "MCProHosting is the world's largest and leading Game Server Hosting provider!"
+	},
+	{
+		"name": "E-Pal",
+		"href": "https://www.epal.gg/",
+		"avatarPath": "/logo/logo-epal.jpg",
+		"description": "E-Pal is the best place to meet friends to play with!"
+	}
+]

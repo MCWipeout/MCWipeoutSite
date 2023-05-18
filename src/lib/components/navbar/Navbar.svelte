@@ -3,6 +3,7 @@
 
 	const navItems = [
 		{ label: 'Home', href: '/' },
+		{ label: 'Seasons', href: '/seasons' },
 		{ label: 'News', href: '/news' },
 		{ label: 'Credits', href: '/credits' }
 	];

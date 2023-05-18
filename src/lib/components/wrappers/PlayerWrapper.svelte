@@ -5,13 +5,7 @@
 	export let name: string | undefined = undefined;
 </script>
 
-<a
-	data-sveltekit-preload-data="hover"
-	href={name ? `/players/${name}` : null}
-	class="flex items-center gap-2"
-	class:link={name}
-	class:link-hover={name}
->
+<div class="flex items-center gap-2">
 	{#if uuid}
 		<img
 			src="https://mc-heads.net/avatar/{uuid}/128"
@@ -25,4 +19,4 @@
 	<span class="truncate hover:overflow-visible">
 		{name ?? 'TBA'}
 	</span>
-</a>
+</div>
