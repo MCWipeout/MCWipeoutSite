@@ -8,7 +8,7 @@ const config: UserConfig = {
 	},
 	ssr: {
 		noExternal: ['echarts']
-	}
+	},
 };
 
 export default config;
