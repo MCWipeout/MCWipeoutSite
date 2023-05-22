@@ -35,7 +35,6 @@
 					{#each navItems as { href, label }}
 						<li><a {href}>{label}</a></li>
 					{/each}
-					<ThemeSelect />
 				</ul>
 			</div>
 			<a class="btn btn-ghost" href="/">

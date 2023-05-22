@@ -3,7 +3,7 @@
 
 	export let data;
 	const { teams, details } = data;
-	const finalists = teams.filter((t) => t.finalist)
+	const finalists = teams.filter((t) => t.finalist).sort((a, b) => a.finalist.finalistTime.localeCompare(b.finalist.finalistTime))
 	const participants = teams.filter((t) => !t.finalist)
 </script>
 

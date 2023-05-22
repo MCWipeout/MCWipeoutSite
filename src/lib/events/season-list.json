@@ -1,8 +1,8 @@
 [
 	{
-		"slug": "sample",
-		"title": "Season 1",
-		"description": "The original season of Wipeout!",
-		"image": null
+		"slug": "season-2",
+		"title": "Season 2",
+		"description": "The upgraded season of wipeout!",
+		"image": "/background-img/presskit-17.png"
 	}
 ]
