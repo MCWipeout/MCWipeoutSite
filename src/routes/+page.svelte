@@ -23,13 +23,12 @@
 <div class="hero py-16 bg-base-200">
 	<div class="hero-content flex-col lg:flex-row-reverse">
 		<iframe
-			width="853"
-			height="480"
 			src="https://www.youtube.com/embed/videoseries?list=PLRaFhPzKh-NTPWnTE_YzrTOSPf1_XOH2i"
 			title="YouTube video player"
 			frameborder="1"
 			allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
 			allowfullscreen
+			class="lg:w-full w-auto h-64"
 		/>
 		<div>
 			<h1 class="text-5xl font-bold">What is Minecraft Wipeout?</h1>
