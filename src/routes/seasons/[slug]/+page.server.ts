@@ -1,10 +1,8 @@
 import type { PageServerLoad } from './$types';
 import fs from 'fs';
 import { parse }   from 'csv-parse';
-import path from 'path';
 
-export const load: PageServerLoad = async ({ params }) => {
-  const __dirname = path.resolve();
+export const load: PageServerLoad = async ({ fetch, params }) => {
   const sourcePath = `/src/lib/events/${params.slug}`;
 
   // const teams = [];
@@ -31,9 +29,12 @@ export const load: PageServerLoad = async ({ params }) => {
 
   //   teams.push(team);
   // }
-  const { default: teams } = await import(`/src/lib/events/${params.slug}/teams.json`)
+  let teamsRes = await fetch(`/events/${params.slug}/teams.json`);
+  let teams = await teamsRes.json();
 
-  const { default: details } = await import(`/src/lib/events/${params.slug}/details.json`);
+  // const { default: details } = await import(`/src/lib/events/${params.slug}/details.json`);
+  let detailsRes = await fetch(`/events/${params.slug}/details.json`);
+  let details = await detailsRes.json();
   
   return {
     teams,
