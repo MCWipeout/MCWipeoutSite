@@ -1,5 +1,6 @@
 <script lang="ts">
 	import ThemeSelect from './ThemeSelect.svelte';
+	import { preloadData } from '$app/navigation';
 
 	const navItems = [
 		{ label: 'Home', href: '/' },
@@ -33,7 +34,7 @@
 					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-fit gap-y-2"
 				>
 					{#each navItems as { href, label }}
-						<li><a {href}>{label}</a></li>
+						<li><a {href} on:mouseover={() => preloadData(href)} on:focus={() => preloadData(href)}>{label}</a></li>
 					{/each}
 				</ul>
 			</div>
@@ -43,7 +44,7 @@
 		</div>
 		<div class="navbar-end hidden lg:flex">
 			{#each navItems as { href, label }}
-				<a class="btn btn-ghost" {href}>{label}</a>
+				<a class="btn btn-ghost" {href} on:mouseover={() => preloadData(href)} on:focus={() => preloadData(href)}>{label}</a>
 			{/each}
 			<ThemeSelect />
 		</div>
