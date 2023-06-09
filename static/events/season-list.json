@@ -3,6 +3,12 @@
 		"slug": "season-2",
 		"title": "Season 2",
 		"description": "The upgraded season of wipeout!",
-		"image": "/background-img/presskit-17.png"
+		"image": "/background-img/presskit-17.webp"
+	},
+	{
+		"slug": "women-of-mc-wipeout",
+		"title": "Women Of MCWipeout",
+		"description": "A special Minecraft Wipeout tournament featuring your favourite female & non-binary creators!",
+		"image": "/background-img/women-of-mc-wipeout.jpg"
 	}
 ]
