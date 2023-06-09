@@ -3,7 +3,6 @@
 
     export let team;
     export let placement;
-    export let 
 </script>
 
 <div class="card card-compact card-side bg-base-100 shadow-xl">
