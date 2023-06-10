@@ -11,6 +11,7 @@
 					src={post.meta.image}
 					alt="{post.meta.title} banner"
 					class="max-h-32 w-full object-cover"
+					loading="lazy"
 				/>
 			</figure>
 			<div class="card-body">

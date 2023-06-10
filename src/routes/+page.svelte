@@ -47,7 +47,7 @@
 		<div class="grid lg:grid-cols-3 gap-4">
 			<div class="card max-w-96 bg-base-100 shadow-xl">
 				<figure class="bg bg-[#1DA1F2] max-h-32">
-					<img src={latestNews.meta.image} alt="Twitter logo" />
+					<img src={latestNews.meta.image} alt="Image banner" loading="lazy"/>
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">
@@ -63,7 +63,7 @@
 			</div>
 			<div class="card max-w-96 bg-base-100 shadow-xl image-full">
 				<figure class="bg bg-[#1DA1F2]">
-					<img src="/background-img/presskit-10.webp" alt="Twitter logo" />
+					<img src="/background-img/presskit-10.webp" alt="Event Schedule Banner" loading="lazy" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Event Schedule</h2>
@@ -96,7 +96,7 @@
 			</div>
 			<div class="card max-w-96 bg-base-100 shadow-xl">
 				<figure class="bg bg-[#1DA1F2] max-h-32">
-					<img src="/background-img/presskit-9.webp" alt="Twitter logo" />
+					<img src="/background-img/presskit-9.webp" alt="Submit Ideas Banner" loading="lazy" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Submit Ideas</h2>
@@ -118,7 +118,7 @@
 		<div class="grid md:grid-cols-3 gap-4">
 			<div class="card card-compact max-w-96 bg-base-100 shadow-xl">
 				<figure class="h-20 bg bg-[#1DA1F2] p-4">
-					<img src="/social/twitter.webp" alt="Twitter logo" class="h-full" />
+					<img src="/social/twitter.webp" alt="Twitter logo" class="h-full" loading="lazy" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Twitter</h2>
@@ -133,7 +133,7 @@
 			</div>
 			<div class="card card-compact max-w-96 bg-base-100 shadow-xl">
 				<figure class="h-20 bg bg-[#5865F2] p-4">
-					<img src="/social/discord.webp" alt="Discord logo" class="h-full" />
+					<img src="/social/discord.webp" alt="Discord logo" class="h-full" loading="lazy" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Discord</h2>
@@ -148,7 +148,7 @@
 			</div>
 			<div class="card card-compact max-w-96 bg-base-100 shadow-xl ">
 				<figure class="h-20 bg-[#c4302b] p-4">
-					<img src="/social/youtube.webp" alt="YouTube logo" class="h-full" />
+					<img src="/social/youtube.webp" alt="YouTube logo" class="h-full" loading="lazy" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">YouTube</h2>
@@ -176,6 +176,7 @@
 							src="/background-img/presskit-{img + 1}.webp"
 							class="w-full"
 							alt="Screenshot {img + 1}"
+							loading="lazy"
 						/>
 						<div
 							class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"

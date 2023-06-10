@@ -8,7 +8,7 @@
 	{#each SeasonList as season}
 		<div class="card bg-base-200 shadow-xl">
 			<figure>
-				<img src={season.image} alt="{season.title} banner" class="max-h-32 w-full object-cover" />
+				<img src={season.image} alt="{season.title} banner" class="max-h-32 w-full object-cover" loading="lazy" />
 			</figure>
 			<div class="card-body">
 				<h2 class="card-title">{season.title}</h2>
