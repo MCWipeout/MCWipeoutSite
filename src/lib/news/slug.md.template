@@ -2,8 +2,8 @@
 title: "News Title"
 date: "YYYY-MM-DD"
 image: "/path/to/img.png"
-description: "News Description"
+description: "A short summary of the news."
 ---
-Insert Text Here
+Insert Text Here. You can use formatting to add *emphasis* and add fanciness.
 
 Once done filling out the template, rename the file to an appropriate name and add ".md".

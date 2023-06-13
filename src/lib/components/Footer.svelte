@@ -25,7 +25,7 @@
 	<div>
 		<img src="/logo.png" alt="MC Wipeout Logo" draggable="false" class="h-24" />
 		<p>
-			An event by <a class="link link-hover" href="https://solo.to/j48">J48Gaming</a> and <a class="link link-hover" href="https://bumpyjake.com/">bumpyJake</a>
+			An event by <a class="link link-hover" href="https://solo.to/j48">J48</a> and <a class="link link-hover" href="https://bumpyjake.com/">bumpyJake</a>
 		</p>
 	</div>
 	{#each footerContent as { id, title, links } (id)}

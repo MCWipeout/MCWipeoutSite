@@ -31,9 +31,9 @@
 			class="lg:w-full w-auto h-64"
 		/>
 		<div>
-			<h1 class="text-5xl font-bold">What is Minecraft Wipeout?</h1>
+			<h1 class="text-5xl font-bold">What is MC Wipeout?</h1>
 			<p class="py-6">
-				MC Wipeout is a series organized by J48Gaming and bumpyJake that first began on January 1,
+				MC Wipeout is a series organized by J48 and bumpyJake that first began on January 1,
 				2022. Creators from all over the globe are invited to participate in an obstacle course and
 				can potentially win prizes if they make it in the fastest time possible.
 			</p>
