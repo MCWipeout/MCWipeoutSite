@@ -14,7 +14,7 @@
 			{#each SponsorList as { name, href, description, avatarPath }}
 				<div class="flex flex-col items-center w-64">
 					<img src={avatarPath} class="h-24 w-24" alt="{name} logo" />
-					<a {href} class="text-center link link-hover font-bold mt-4">{name}</a>
+					<a {href} class="text-center font-bold mt-4" class:link={href} class:link-hover={href}>{name}</a>
 					{#if description}
 						<p class="text-center">{description}</p>
 					{/if}
@@ -30,7 +30,7 @@
 			{#each StaffList as { name, href, description, avatarPath }}
 				<div class="flex flex-col items-center w-64">
 					<img src={avatarPath} class="h-24 w-24 mask mask-circle" alt="{name} avatar" />
-					<a {href} class="text-center link link-hover font-bold mt-4">{name}</a>
+					<a {href} class="text-center font-bold mt-4" class:link={href} class:link-hover={href}>{name}</a>
 					{#if description}
 						<p class="text-center">{description}</p>
 					{/if}

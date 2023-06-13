@@ -3,12 +3,12 @@
 		"name": "Garner",
 		"href": "https://solo.to/j48",
 		"description": "Brand Scout",
-		"avatarPath": "/avatar/avatar-garner.jpeg"
+		"avatarPath": "/avatar/avatar-garner.webp"
 	},
 	{
 		"name": "JoeyCapollo",
 		"href": "https://twitter.com/JoeyCapollo",
-		"avatarPath": "/avatar/avatar-joeycapollo.jpg",
+		"avatarPath": "/avatar/avatar-joeycapollo.webp",
 		"description": "Advisory Help"
 	},
 	{
@@ -19,6 +19,6 @@
 	{
 		"name": "Zyphon",
 		"description": "The Original MC Wipeout Creator",
-		"avatarPath": "/avatar/avatar-zyphon.jpg"
+		"avatarPath": "/avatar/avatar-zyphon.webp"
 	}
 ]

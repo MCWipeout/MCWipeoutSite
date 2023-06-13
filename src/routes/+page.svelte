@@ -89,9 +89,6 @@
 							</tbody>
 						</table>
 					</div>
-					<!-- <div class="card-actions justify-end">
-						<a class="btn btn-primary" href="https://www.twitter.com/mc_wipeout">Read More</a>
-					</div> -->
 				</div>
 			</div>
 			<div class="card max-w-96 bg-base-100 shadow-xl">
@@ -105,7 +102,7 @@
 						suggestion!
 					</p>
 					<div class="card-actions justify-end">
-						<a class="btn btn-primary" href="https://www.twitter.com/mc_wipeout">Read More</a>
+						<a class="btn btn-primary" href="https://forms.gle/7VcZKRHex2WePT2G6">Read More</a>
 					</div>
 				</div>
 			</div>
@@ -142,7 +139,7 @@
 						signups here.
 					</p>
 					<div class="card-actions justify-end">
-						<a class="btn btn-primary" href="https://discord.gg/b8DGdBjuNR">Join</a>
+						<a class="btn btn-primary" href="https://discord.gg/EhuZUzk7Mc">Join</a>
 					</div>
 				</div>
 			</div>
@@ -154,7 +151,7 @@
 					<h2 class="card-title">YouTube</h2>
 					<p>Subscribe to get the best highlights and clips of the event!</p>
 					<div class="card-actions justify-end">
-						<button class="btn btn-primary">Subscribe</button>
+						<a class="btn btn-primary" href="https://www.youtube.com/@mcwipeout">Subscribe</a>
 					</div>
 				</div>
 			</div>
@@ -200,7 +197,7 @@
 		</div>
 		<div class="lg:basis-1/3 w-full h-full flex flex-col justify-items-stretch">
 			<h1 class="text-5xl font-bold grow mb-4 text-center">Tweets</h1>
-			<div class="rounded-xl overflow-hidden">
+			<div class="rounded-xl overflow-hidden max-h-[500px]">
 				<a
 					class="twitter-timeline"
 					data-theme="dark"

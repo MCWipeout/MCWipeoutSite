@@ -1,0 +1,19 @@
+{
+    "redirects": [
+        { 
+            "source": "/discord",
+            "destination": "https://discord.gg/EhuZUzk7Mc", 
+            "permanent": true
+        },
+        { 
+            "source": "/twitter",
+            "destination": "https://twitter.com/mc_wipeout", 
+            "permanent": true
+        },
+        { 
+            "source": "/youtube",
+            "destination": "https://www.youtube.com/@mcwipeout", 
+            "permanent": true
+        }
+    ]
+}

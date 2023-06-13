@@ -3,27 +3,33 @@
 		"name": "J48",
 		"href": "https://solo.to/j48",
 		"description": "Organizer",
-		"avatarPath": "/avatar/avatar-j48.jpg"
+		"avatarPath": "/avatar/avatar-j48.webp"
 	},
 	{
 		"name": "bumpyJake",
-		"href": "https://solo.to/bumpyjake",
+		"href": "https://bumpyjake.com/",
 		"description": "Co-organizer",
 		"avatarPath": "/avatar/avatar-bumpyjake.webp"
 	},
 	{
-		"name": "Stormbits",
-		"description": "Developer",
-		"avatarPath": "/avatar/avatar-stormbits.webp"
+		"name": "Zphen",
+		"description": "Art & Marketing",
+		"avatarPath": "/avatar/avatar-zphen.webp"
 	},
 	{
-		"name": "Marius",
-		"description": "Builder",
-		"avatarPath": "/avatar/avatar-marius.webp"
+		"name": "realaj",
+		"description": "Art",
+		"avatarPath": "/avatar/avatar-realaj.webp"
 	},
 	{
-		"name": "V4LK",
-		"description": "Art"
+		"name": "soup57",
+		"description": "Art",
+		"avatarPath": "/avatar/avatar-soup57.webp"
+	},
+	{
+		"name": "VALK",
+		"description": "Art",
+		"avatarPath": "/avatar/avatar-valk.webp"
 	},
 	{
 		"name": "dGc",
@@ -31,24 +37,49 @@
 		"avatarPath": "/avatar/avatar-dgc.webp"
 	},
 	{
-		"name": "theinnerdomain",
-		"href": "https://twitter.com/Theinnerdomain",
-		"avatarPath": "/avatar/avatar-theinnerdomain.jpg",
-		"description": "Sound Design"
-	},
-	{
-		"name": "soup",
-		"description": "Graphics",
-		"avatarPath": "/avatar/avatar-soup.webp"
-	},
-	{
 		"name": "Deuclorix",
 		"description": "Builder",
 		"avatarPath": "/avatar/avatar-deuclroix.webp"
 	},
 	{
+		"name": "Marius",
+		"description": "Builder",
+		"avatarPath": "/avatar/avatar-marius.webp"
+	},
+	{
+		"name": "Raf",
+		"description": "Builder",
+		"avatarPath": "/avatar/avatar-raf.webp"
+	},
+	{
 		"name": "Aylias",
 		"description": "Developer",
-		"avatarPath": "/avatar/avatar-aylias.jpg"
+		"avatarPath": "/avatar/avatar-aylias.webp"
+	},
+	{
+		"name": "Stormbits",
+		"description": "Developer",
+		"avatarPath": "/avatar/avatar-stormbits.webp"
+	},
+	{
+		"name": "raii",
+		"description": "General Staff",
+		"avatarPath": "/avatar/avatar-raii.webp"
+	},
+	{
+		"name": "theinnerdomain",
+		"href": "https://twitter.com/Theinnerdomain",
+		"avatarPath": "/avatar/avatar-theinnerdomain.webp",
+		"description": "Sound Design"
+	},
+	{
+		"name": "banu",
+		"description": "Website",
+		"avatarPath": "/avatar/avatar-banu.webp"
+	},
+	{
+		"name": "polar",
+		"description": "Website",
+		"avatarPath": "/avatar/avatar-polar.webp"
 	}
 ]
