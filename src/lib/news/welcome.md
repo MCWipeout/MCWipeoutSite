@@ -6,7 +6,7 @@ description: "There's a few things you'll want to know about the site, click her
 ---
 # Hi guys!
 
-Welcome to the MC Wipeout site. This place aims to archive the performances of all MC Wipeout events and the player teams and their times for each section.
+Welcome to the MCWipeout site. This place aims to archive the performances of all MCWipeout events and the player teams and their times for each section.
 
 We plan on adding more news here about the obstacle courses and the event times, so keep this place in mind for future announcements!
 

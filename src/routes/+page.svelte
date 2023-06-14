@@ -13,8 +13,8 @@
 </script>
 
 <svelte:head>
-	<title>MC Wipeout</title>
-	<meta name="description" content="MC Wipeout - Minecraft parkour, but with a twist!" />
+	<title>MCWipeout</title>
+	<meta name="description" content="MCWipeout - Minecraft parkour, but with a twist!" />
 	<link rel="icon" type="image/png" href="/logo.png" />
 	<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </svelte:head>
@@ -31,9 +31,9 @@
 			class="lg:w-full w-auto h-64"
 		/>
 		<div>
-			<h1 class="text-5xl font-bold">What is MC Wipeout?</h1>
+			<h1 class="text-5xl font-bold">What is MCWipeout?</h1>
 			<p class="py-6">
-				MC Wipeout is a series organized by J48 and bumpyJake that first began on January 1,
+				MCWipeout is a series organized by J48 and bumpyJake that first began on January 1,
 				2022. Creators from all over the globe are invited to participate in an obstacle course and
 				can potentially win prizes if they make it in the fastest time possible.
 			</p>
@@ -120,7 +120,7 @@
 				<div class="card-body">
 					<h2 class="card-title">Twitter</h2>
 					<p>
-						Join our community to discuss MC Wipeout and help out! We also occasionally post tester
+						Join our community to discuss MCWipeout and help out! We also occasionally post tester
 						signups here.
 					</p>
 					<div class="card-actions justify-end">
@@ -135,7 +135,7 @@
 				<div class="card-body">
 					<h2 class="card-title">Discord</h2>
 					<p>
-						Join our community to discuss MC Wipeout and help out! We also occasionally post tester
+						Join our community to discuss MCWipeout and help out! We also occasionally post tester
 						signups here.
 					</p>
 					<div class="card-actions justify-end">
@@ -204,7 +204,7 @@
 					data-height={screenshotHeroHeight}
 					data-aria-polite="assertive"
 					data-dnt="true"
-					href="https://twitter.com/mc_wipeout?ref_src=twsrc%5Etfw">Tweets by MC Wipeout</a
+					href="https://twitter.com/mc_wipeout?ref_src=twsrc%5Etfw">Tweets by MCWipeout</a
 				>
 			</div>
 		</div>

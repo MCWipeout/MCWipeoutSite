@@ -39,7 +39,7 @@
 				</ul>
 			</div>
 			<a class="btn btn-ghost" href="/">
-				<img src="/logo.png" alt="MC Wipeout Logo" draggable="false" class="h-12" />
+				<img src="/logo.png" alt="MCWipeout Logo" draggable="false" class="h-12" />
 			</a>
 		</div>
 		<div class="navbar-end hidden lg:flex">
