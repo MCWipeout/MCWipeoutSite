@@ -52,11 +52,6 @@
 		"avatarPath": "/avatar/avatar-raf.webp"
 	},
 	{
-		"name": "Aylias",
-		"description": "Developer",
-		"avatarPath": "/avatar/avatar-aylias.webp"
-	},
-	{
 		"name": "Stormbits",
 		"description": "Developer",
 		"avatarPath": "/avatar/avatar-stormbits.webp"
@@ -81,5 +76,10 @@
 		"name": "polar",
 		"description": "Website",
 		"avatarPath": "/avatar/avatar-polar.webp"
+	},
+	{
+		"name": "Sorbetes",
+		"description": "Website",
+		"avatarPath": "/avatar/avatar-sorbetes.webp"
 	}
 ]

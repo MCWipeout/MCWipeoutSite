@@ -23,7 +23,7 @@
 
 <footer class="footer footer-center p-10 bg-neutral text-neutral-content" data-sveltekit-reload>
 	<div>
-		<img src="/logo.png" alt="MCWipeout Logo" draggable="false" class="h-24" />
+		<img src="/logo.webp" alt="MCWipeout Logo" draggable="false" class="h-24" />
 		<p>
 			An event by <a class="link link-hover" href="https://solo.to/j48">J48</a> and <a class="link link-hover" href="https://bumpyjake.com/">bumpyJake</a>
 		</p>

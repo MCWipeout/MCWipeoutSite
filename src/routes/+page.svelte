@@ -3,7 +3,7 @@
 	import WipeoutHero from '$lib/components/WipeoutHero.svelte';
 
 	let imageArray: number[] = [];
-	for (let i = 0; i < 17; i++) {
+	for (let i = 0; i < 9; i++) {
 		imageArray.push(i);
 	}
 
@@ -15,7 +15,7 @@
 <svelte:head>
 	<title>MCWipeout</title>
 	<meta name="description" content="MCWipeout - Minecraft parkour, but with a twist!" />
-	<link rel="icon" type="image/png" href="/logo.png" />
+	<link rel="icon" type="image/png" href="/logo.webp" />
 	<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
 </svelte:head>
 
@@ -47,7 +47,7 @@
 		<div class="grid lg:grid-cols-3 gap-4">
 			<div class="card max-w-96 bg-base-100 shadow-xl">
 				<figure class="bg bg-[#1DA1F2] max-h-32">
-					<img src={latestNews.meta.image} alt="Image banner" loading="lazy"/>
+					<img src={latestNews.meta.image} alt="Latest news banner" loading="lazy"/>
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">
@@ -63,7 +63,7 @@
 			</div>
 			<div class="card max-w-96 bg-base-100 shadow-xl image-full">
 				<figure class="bg bg-[#1DA1F2]">
-					<img src="/background-img/presskit-10.webp" alt="Event Schedule Banner" loading="lazy" />
+					<img src="/background-img/women-of-mcwipeout/banner.webp" alt="Event Schedule Banner" loading="lazy" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Event Schedule</h2>
@@ -72,19 +72,19 @@
 							<!-- head -->
 							<thead>
 								<tr>
-									<th>Day</th>
-									<th>Time</th>
+									<th class="text-base-content">Day</th>
+									<th class="text-base-content">Time</th>
 								</tr>
 							</thead>
 							<tbody class="overflow-y-auto">
 								<!-- row 1 -->
 								<tr>
-									<th>Prelims</th>
-									<td>TBA</td>
+									<th class="text-base-content">Prelims</th>
+									<td class="text-base-content">TBA</td>
 								</tr>
 								<tr>
-									<th>Finals</th>
-									<td>TBA</td>
+									<th class="text-base-content">Finals</th>
+									<td class="text-base-content">TBA</td>
 								</tr>
 							</tbody>
 						</table>
@@ -93,7 +93,7 @@
 			</div>
 			<div class="card max-w-96 bg-base-100 shadow-xl">
 				<figure class="bg bg-[#1DA1F2] max-h-32">
-					<img src="/background-img/presskit-9.webp" alt="Submit Ideas Banner" loading="lazy" />
+					<img src="/background-img/submit-ideas.webp" alt="Submit Ideas Banner" loading="lazy" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Submit Ideas</h2>
@@ -170,7 +170,7 @@
 						bind:clientHeight={screenshotHeroHeight}
 					>
 						<img
-							src="/background-img/presskit-{img + 1}.webp"
+							src="/background-img/main/{img + 1}.webp"
 							class="w-full"
 							alt="Screenshot {img + 1}"
 							loading="lazy"

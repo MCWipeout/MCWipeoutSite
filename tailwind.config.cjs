@@ -3,7 +3,7 @@ module.exports = {
 	theme: {
 		extend: {
 			backgroundImage: {
-				'main-lobby': "url('/background-img/presskit-1.webp')"
+				'main-lobby': "url('/background-img/welcome.webp')"
 			}
 		}
 	},

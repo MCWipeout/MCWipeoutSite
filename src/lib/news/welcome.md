@@ -1,7 +1,7 @@
 ---
 title: "Welcome!"
 date: "2023-04-27"
-image: "/background-img/presskit-1.webp"
+image: "/background-img/welcome.webp"
 description: "There's a few things you'll want to know about the site, click here to find out."
 ---
 # Hi guys!
