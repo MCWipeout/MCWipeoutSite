@@ -1,6 +1,5 @@
 <script lang="ts">
 	import ThemeSelect from './ThemeSelect.svelte';
-	import { preloadData } from '$app/navigation';
 
 	const navItems = [
 		{ label: 'Home', href: '/' },
@@ -13,6 +12,7 @@
 <header>
 	<div class="navbar bg-base-100">
 		<div class="navbar-start">
+			<!-- svelte-ignore a11y-no-noninteractive-tabindex -->
 			<div class="dropdown">
 				<label class="btn btn-ghost lg:hidden" for="menu" tabindex="0">
 					<svg
@@ -31,10 +31,15 @@
 					>
 				</label>
 				<ul
-					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-fit gap-y-2"
+					class="menu menu-compact dropdown-content mt-3 p-2 shadow bg-base-100 rounded-box w-48 gap-y-2"
+					tabindex="0"
 				>
 					{#each navItems as { href, label }}
-						<li><a {href} data-sveltekit-preload-code="hover" data-sveltekit-preload-data="hover">{label}</a></li>
+						<li>
+							<a {href} data-sveltekit-preload-code="hover" data-sveltekit-preload-data="hover"
+								>{label}</a
+							>
+						</li>
 					{/each}
 				</ul>
 			</div>
