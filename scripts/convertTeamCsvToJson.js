@@ -2,7 +2,6 @@ import { parse } from 'csv-parse';
 import fs from 'fs';
 
 const filename = process.argv[2];
-console.log(process.argv)
 const teams = [];
 if (!filename) {
     throw new Error("Filename required!");
