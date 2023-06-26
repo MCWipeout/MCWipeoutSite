@@ -21,7 +21,6 @@
                 src={img}
                 class="w-full"
                 alt="Screenshot {i + 1}"
-                loading="lazy"
             />
             <div
                 class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2"
