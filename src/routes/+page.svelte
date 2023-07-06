@@ -17,7 +17,7 @@
 	<title>MCWipeout</title>
 	<meta name="description" content="MCWipeout - Minecraft parkour, but with a twist!" />
 	<link rel="icon" type="image/png" href="/favicon.png" />
-	<script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+	<!-- <script src="https://platform.twitter.com/widgets.js" charset="utf-8"></script> -->
 </svelte:head>
 
 <WipeoutHero />
@@ -80,12 +80,8 @@
 							<tbody class="overflow-y-auto">
 								<!-- row 1 -->
 								<tr>
-									<th class="text-base-content">Prelims</th>
-									<td class="text-base-content">TBA</td>
-								</tr>
-								<tr>
-									<th class="text-base-content">Finals</th>
-									<td class="text-base-content">TBA</td>
+									<th class="text-base-content">July 12</th>
+									<td class="text-base-content">2 PM EST</td>
 								</tr>
 							</tbody>
 						</table>
@@ -161,11 +157,11 @@
 </div>
 <div class="hero py-16 bg-base-100">
 	<div class="hero-content flex flex-col items-stretch lg:flex-row w-full">
-		<div class="flex flex-col lg:basis-2/3 flex-wrap">
+		<div class="flex flex-col flex-wrap">
 			<h1 class="text-5xl font-bold grow mb-4 text-center">Screenshots</h1>
 			<Carousel images={imageArray} bind:carouselHeight={screenshotHeroHeight}/>
 		</div>
-		<div class="lg:basis-1/3 w-full flex flex-col justify-items-stretch">
+		<!-- <div class="lg:basis-1/3 w-full flex flex-col justify-items-stretch">
 			<h1 class="text-5xl font-bold grow mb-4 text-center">Tweets</h1>
 			<div class="rounded-xl overflow-hidden max-h-[500px]">
 				<a
@@ -177,6 +173,6 @@
 					href="https://twitter.com/mc_wipeout?ref_src=twsrc%5Etfw">Tweets by MCWipeout</a
 				>
 			</div>
-		</div>
+		</div> -->
 	</div>
 </div>
