@@ -1,6 +1,6 @@
 <script lang="ts">
 	import Carousel from '$lib/components/Carousel.svelte';
-	import TeamResult from './components/TeamResult.svelte';
+	import TeamCard from '$lib/components/TeamCard.svelte';
 
 	export let data;
 	const { teams: players, details } = data;
@@ -59,9 +59,19 @@
 <div class="hero bg-base-200">
 	<div class="hero-content flex flex-wrap w-full items-stretch">
 		<h1 class="text-5xl font-bold basis-full text-center">Leaderboards</h1>
-		<div class="w-full flex flex-col gap-2">
+		<div class="w-full grid grid-cols-2 gap-2">
 			{#each teams as team, i}
-				<TeamResult {team} placement={i} />
+				<TeamCard
+					teamName={team.team}
+					placement={i}
+					players={team.player}
+					badges={[
+							{ name: `Map 1 - ${team.map1}` },
+							{ name: `Map 2 - ${team.map2}` },
+							{ name: `Sumo - ${team.sumo}` }
+						]}
+					largeDisplay={team.total}
+				/>
 			{/each}
 		</div>
 	</div>
