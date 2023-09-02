@@ -1,8 +1,8 @@
-<script>
+<script lang="ts">
     import PlayerWrapper from '$lib/components/wrappers/PlayerWrapper.svelte';
 
-    export let team;
-    export let placement;
+    export let team: any;
+    export let placement: any = null;
 </script>
 
 <div class="card card-compact card-side bg-base-100 shadow-xl">
@@ -32,9 +32,4 @@
         </div>
         {/if}
     </div>
-    <!-- {#if team.finalist}
-    <div class="p-4 flex items-end">
-        <div class="text-5xl font-bold">{team.finalist.finalistTime}</div>
-    </div>
-    {/if} -->
 </div>

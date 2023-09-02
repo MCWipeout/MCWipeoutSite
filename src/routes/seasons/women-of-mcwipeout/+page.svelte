@@ -1,13 +1,13 @@
-<script>
+<script lang="ts">
 	import Carousel from '$lib/components/Carousel.svelte';
 	import TeamResult from './components/TeamResult.svelte';
 
 	export let data;
 	const { teams: players, details } = data;
 
-	const teamList = [...new Set(players.map((p) => p.team))];
+	const teamList = [...new Set(players.map((p: any) => p.team))];
 	const teams = teamList.map(team => 
-		players.filter(p => p.team === team).reduce((prev, curr) => {
+		players.filter((p: any)=> p.team === team).reduce((prev: any, curr: any) => {
 			return {
 				team: prev.team,
 				player: prev.player.concat(curr.player),
@@ -35,7 +35,7 @@
 	});
 
 	const slug = 'women-of-mcwipeout';
-	let imageArray = [];
+	let imageArray: any[] = [];
 	for (let i = 0; i < details.galleryCount; i++) {
 		imageArray.push(`/background-img/${slug}/${i + 1}.webp`);
 	}

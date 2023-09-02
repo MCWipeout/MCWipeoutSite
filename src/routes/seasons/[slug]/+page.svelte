@@ -4,8 +4,8 @@
 
 	export let data;
 	const { teams, details, slug } = data;
-	const finalists = teams.filter((t) => t.finalist).sort((a, b) => a.finalist.finalistTime.localeCompare(b.finalist.finalistTime))
-	const participants = teams.filter((t) => !t.finalist);
+	const finalists = teams.filter((t: any) => t.finalist).sort((a: any, b: any) => a.finalist.finalistTime.localeCompare(b.finalist.finalistTime))
+	const participants = teams.filter((t: any) => !t.finalist);
 
 	let imageArray: string[] = [];
 	for (let i = 0; i < details.galleryCount; i++) {
