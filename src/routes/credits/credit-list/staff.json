@@ -12,39 +12,20 @@
 		"avatarPath": "/avatar/avatar-bumpyjake.webp"
 	},
 	{
-		"name": "Zphen",
-		"description": "Art & Marketing",
-		"avatarPath": "/avatar/avatar-zphen.webp"
+		"name": "NotNexus",
+		"description": "Ideation",
+		"avatarPath": "/avatar/avatar-notnexus.webp"
 	},
 	{
-		"name": "realaj",
-		"description": "Art",
-		"avatarPath": "/avatar/avatar-realaj.webp"
+		"name": "Stormbits",
+		"href": "https://twitter.com/Stormbitss",
+		"description": "Developer",
+		"avatarPath": "/avatar/avatar-stormbits.webp"
 	},
 	{
-		"name": "soup57",
-		"description": "Art",
-		"avatarPath": "/avatar/avatar-soup57.webp"
-	},
-	{
-		"name": "VALK",
-		"description": "Art",
-		"avatarPath": "/avatar/avatar-valk.webp"
-	},
-	{
-		"name": "dGc",
-		"description": "Builder & Sound Design",
-		"avatarPath": "/avatar/avatar-dgc.webp"
-	},
-	{
-		"name": "Deuclorix",
-		"description": "Builder",
-		"avatarPath": "/avatar/avatar-deuclroix.webp"
-	},
-	{
-		"name": "Marius",
-		"description": "Builder",
-		"avatarPath": "/avatar/avatar-marius.webp"
+		"name": "Andrew",
+		"description": "Developer",
+		"avatarPath": "/avatar/avatar-andrew.webp"
 	},
 	{
 		"name": "Raf",
@@ -52,14 +33,29 @@
 		"avatarPath": "/avatar/avatar-raf.webp"
 	},
 	{
-		"name": "Stormbits",
-		"description": "Developer",
-		"avatarPath": "/avatar/avatar-stormbits.webp"
+		"name": "PROP",
+		"description": "Builder",
+		"avatarPath": "/avatar/avatar-prop.webp"
 	},
 	{
-		"name": "raii",
-		"description": "General Staff",
-		"avatarPath": "/avatar/avatar-raii.webp"
+		"name": "Furgus",
+		"description": "Models",
+		"avatarPath": "/avatar/avatar-furgus.webp"
+	},
+	{
+		"name": "VALK",
+		"description": "Art",
+		"avatarPath": "/avatar/avatar-valk.webp"
+	},
+	{
+		"name": "realaj",
+		"description": "Art",
+		"avatarPath": "/avatar/avatar-realaj.webp"
+	},
+	{
+		"name": "dGc",
+		"description": "Builder & Sound Design",
+		"avatarPath": "/avatar/avatar-dgc.webp"
 	},
 	{
 		"name": "theinnerdomain",
@@ -68,18 +64,28 @@
 		"description": "Sound Design"
 	},
 	{
-		"name": "banu",
-		"description": "Website",
-		"avatarPath": "/avatar/avatar-banu.webp"
+		"name": "soup57",
+		"description": "Art",
+		"avatarPath": "/avatar/avatar-soup57.webp"
 	},
 	{
-		"name": "polar",
-		"description": "Website",
-		"avatarPath": "/avatar/avatar-polar.webp"
+		"name": "Zphen",
+		"description": "Art & Marketing",
+		"avatarPath": "/avatar/avatar-zphen.webp"
+	},
+	{
+		"name": "raii",
+		"description": "General Staff",
+		"avatarPath": "/avatar/avatar-raii.webp"
 	},
 	{
 		"name": "Sorbetes",
 		"description": "Website",
 		"avatarPath": "/avatar/avatar-sorbetes.webp"
+	},
+	{
+		"name": "polar",
+		"description": "General Staff",
+		"avatarPath": "/avatar/avatar-polar.webp"
 	}
 ]

@@ -6,13 +6,18 @@
 		"description": "Advisory Help"
 	},
 	{
-		"name": "Argon",
-		"description": "Quality Assurance",
-		"avatarPath": "/avatar/avatar-argon.webp"
-	},
-	{
 		"name": "Zyphon",
 		"description": "The Original MCWipeout Creator",
 		"avatarPath": "/avatar/avatar-zyphon.webp"
+	},
+	{
+		"name": "Vitalasy",
+		"description": "Player Management",
+		"avatarPath": "/avatar/avatar-vitalasy.webp"
+	},
+	{
+		"name": "Zeuz",
+		"description": "Player Management",
+		"avatarPath": "/avatar/avatar-zeuz.webp"
 	}
 ]
