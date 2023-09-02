@@ -10,5 +10,17 @@
 		"href": "https://mcprohosting.com/",
 		"avatarPath": "/logo/logo-mcprohosting.webp",
 		"description": "MCProHosting is the world's largest and leading Game Server Hosting provider!"
+	},
+	{
+		"name": "Voicemod",
+		"href": "https://www.voicemod.com/",
+		"avatarPath": "/logo/logo-voicemod.webp",
+		"description": "Free Real-Time Voice Changer"
+	},
+	{
+		"name": "ESSENTIAL Mod",
+		"href": "https://essential.gg/",
+		"avatarPath": "/logo/logo-essential.webp",
+		"description": "Essential is a free quality of life mod for Minecraft."
 	}
 ]

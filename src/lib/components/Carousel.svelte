@@ -1,6 +1,6 @@
 <script lang="ts">
     export let images: string[];
-    export let carouselHeight;
+    export let carouselHeight = null;
 
     let carouselElement: HTMLDivElement;
 

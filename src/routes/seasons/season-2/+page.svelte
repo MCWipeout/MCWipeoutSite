@@ -9,14 +9,14 @@
 
 	let imageArray: string[] = [];
 	for (let i = 0; i < details.galleryCount; i++) {
-		imageArray.push(`/background-img/${slug}/${i + 1}.webp`);
+		imageArray.push(`/background-img/season-2/${i + 1}.webp`);
 	}
 </script>
 
-<div class="hero py-16 bg-base-100">
+<div class="hero pt-16 bg-base-100">
 	<div class="hero-content flex-col lg:flex-row-reverse">
 		<div>
-			<h1 class="text-5xl font-bold text-center">{details.eventName}</h1> 
+			<h1 class="text-6xl font-bold text-center">{details.eventName}</h1> 
 		</div>
 	</div>
 </div>

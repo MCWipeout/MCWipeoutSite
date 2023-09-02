@@ -1,13 +1,13 @@
-<script>
+<script lang="ts">
 	import Carousel from '$lib/components/Carousel.svelte';
-	import TeamResult from './components/TeamResult.svelte';
+	import TeamCard from '$lib/components/TeamCard.svelte';
 
 	export let data;
 	const { teams: players, details } = data;
 
-	const teamList = [...new Set(players.map((p) => p.team))];
+	const teamList = [...new Set(players.map((p: any) => p.team))];
 	const teams = teamList.map(team => 
-		players.filter(p => p.team === team).reduce((prev, curr) => {
+		players.filter((p: any)=> p.team === team).reduce((prev: any, curr: any) => {
 			return {
 				team: prev.team,
 				player: prev.player.concat(curr.player),
@@ -35,7 +35,7 @@
 	});
 
 	const slug = 'women-of-mcwipeout';
-	let imageArray = [];
+	let imageArray: any[] = [];
 	for (let i = 0; i < details.galleryCount; i++) {
 		imageArray.push(`/background-img/${slug}/${i + 1}.webp`);
 	}
@@ -59,9 +59,19 @@
 <div class="hero bg-base-200">
 	<div class="hero-content flex flex-wrap w-full items-stretch">
 		<h1 class="text-5xl font-bold basis-full text-center">Leaderboards</h1>
-		<div class="w-full flex flex-col gap-2">
+		<div class="w-full grid grid-cols-2 gap-2">
 			{#each teams as team, i}
-				<TeamResult {team} placement={i} />
+				<TeamCard
+					teamName={team.team}
+					placement={i}
+					players={team.player}
+					badges={[
+							{ name: `Map 1 - ${team.map1}` },
+							{ name: `Map 2 - ${team.map2}` },
+							{ name: `Sumo - ${team.sumo}` }
+						]}
+					largeDisplay={team.total}
+				/>
 			{/each}
 		</div>
 	</div>
