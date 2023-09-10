@@ -92,7 +92,7 @@
 										}) }</td>
 										<td class="text-base-content">{ date.toLocaleTimeString(undefined, {
 											hour: "numeric",
-											minute: undefined,
+											minute: "2-digit",
 											second: undefined,
 											hour12: true
 										}) }</td>
