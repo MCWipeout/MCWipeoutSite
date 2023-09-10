@@ -59,7 +59,7 @@
 <div class="hero bg-base-200">
 	<div class="hero-content flex flex-wrap w-full items-stretch">
 		<h1 class="text-5xl font-bold basis-full text-center">Leaderboards</h1>
-		<div class="w-full grid grid-cols-2 gap-2">
+		<div class="w-full grid grid-cols-2 gap-4">
 			{#each teams as team, i}
 				<TeamCard
 					teamName={team.team}

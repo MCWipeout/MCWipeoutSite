@@ -32,7 +32,7 @@
 	<div class="hero-content flex flex-wrap w-full items-stretch">
 		<h1 class="text-5xl font-bold basis-full text-center">Leaderboards</h1>
 		<h2 class="text-3xl font-bold basis-full">Finalists</h2>
-		<div class="w-full grid lg:grid-cols-2 gap-2">
+		<div class="w-full grid lg:grid-cols-2 gap-4">
 			{#each finalists as team, i}
 				<TeamCard
 					teamName={team.teamName}

@@ -42,7 +42,7 @@
 		</div>
 	</div>
 </div>
-<div class="hero bg-base-100">
+<div class="hero py-16 bg-base-100">
 	<div class="hero-content flex flex-wrap w-full items-stretch">
 		<h1 class="text-5xl font-bold basis-full text-center">Event News</h1>
 		<div class="grid lg:grid-cols-3 gap-4">
@@ -99,14 +99,14 @@
 						suggestion!
 					</p>
 					<div class="card-actions justify-end">
-						<a class="btn btn-primary" href="https://forms.gle/7VcZKRHex2WePT2G6">Read More</a>
+						<a class="btn btn-primary" href="https://forms.gle/7VcZKRHex2WePT2G6">Visit form</a>
 					</div>
 				</div>
 			</div>
 		</div>
 	</div>
 </div>
-<div class="hero bg-base-200">
+<div class="hero py-16 bg-base-200">
 	<div class="hero-content flex flex-wrap w-full items-stretch">
 		<h1 class="text-5xl font-bold basis-full text-center">Follow us on our socials!</h1>
 		<div class="grid md:grid-cols-3 gap-4">
