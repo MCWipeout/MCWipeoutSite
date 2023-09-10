@@ -11,6 +11,12 @@
 	let screenshotHeroHeight: number;
 
 	let latestNews = data.posts[0];
+
+	const eventDates = [
+		new Date("11/03/2023 07:00:00 AM EST"),
+		new Date("11/03/2023 02:00:00 PM EST"),
+		new Date("11/04/2023 05:00:00 PM EST"),
+	]
 </script>
 
 <svelte:head>
@@ -78,19 +84,17 @@
 								</tr>
 							</thead>
 							<tbody class="overflow-y-auto">
-								<!-- row 1 -->
-								<tr>
-									<th class="text-base-content">November 3</th>
-									<td class="text-base-content">7 AM EST</td>
-								</tr>
-								<tr>
-									<th class="text-base-content">November 3</th>
-									<td class="text-base-content">2 PM EST</td>
-								</tr>
-								<tr>
-									<th class="text-base-content">November 4</th>
-									<td class="text-base-content">5 PM EST</td>
-								</tr>
+								{#each eventDates as date}
+									<tr>
+										<td class="text-base-content">{ date.toLocaleDateString(undefined, {
+											month: "long",
+											day: "numeric"
+										}) }</td>
+										<td class="text-base-content">{ date.toLocaleTimeString(undefined, {
+											hour: "numeric"
+										}) }</td>
+									</tr>
+								{/each}
 							</tbody>
 						</table>
 					</div>
