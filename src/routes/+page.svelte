@@ -91,7 +91,10 @@
 											day: "numeric"
 										}) }</td>
 										<td class="text-base-content">{ date.toLocaleTimeString(undefined, {
-											hour: "numeric"
+											hour: "numeric",
+											minute: undefined,
+											second: undefined,
+											hour12: true
 										}) }</td>
 									</tr>
 								{/each}
