@@ -28,6 +28,11 @@
 		"avatarPath": "/avatar/avatar-andrew.webp"
 	},
 	{
+		"name": "VimHax",
+		"description": "Developer",
+		"avatarPath": "/avatar/avatar-vimhax.webp"
+	},
+	{
 		"name": "Raf",
 		"description": "Builder",
 		"avatarPath": "/avatar/avatar-raf.webp"
