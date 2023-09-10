@@ -73,15 +73,23 @@
 							<!-- head -->
 							<thead>
 								<tr>
-									<th class="text-base-content">Day</th>
+									<th class="text-base-content">Session</th>
 									<th class="text-base-content">Time</th>
 								</tr>
 							</thead>
 							<tbody class="overflow-y-auto">
 								<!-- row 1 -->
 								<tr>
-									<th class="text-base-content">July 12</th>
+									<th class="text-base-content">November 3</th>
+									<td class="text-base-content">7 AM EST</td>
+								</tr>
+								<tr>
+									<th class="text-base-content">November 3</th>
 									<td class="text-base-content">2 PM EST</td>
+								</tr>
+								<tr>
+									<th class="text-base-content">November 4</th>
+									<td class="text-base-content">5 PM EST</td>
 								</tr>
 							</tbody>
 						</table>
