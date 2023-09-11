@@ -1,7 +1,7 @@
 ---
 title: "Season 3 Date Announcements"
 date: "2023-09-11"
-image: "/background-img/newhub.webp"
+image: "/background-img/newhub.png"
 description: "The dates for Season 3 of MCWipeout are released! Here's what you need to know"
 ---
 # Hi guys!
