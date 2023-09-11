@@ -86,16 +86,19 @@
 							<tbody class="overflow-y-auto">
 								{#each eventDates as date}
 									<tr>
-										<td class="text-base-content">{ date.toLocaleDateString(undefined, {
-											month: "long",
-											day: "numeric"
-										}) }</td>
-										<td class="text-base-content">{ date.toLocaleTimeString(undefined, {
-											hour: "numeric",
-											minute: "2-digit",
-											second: undefined,
-											hour12: true
-										}) }</td>
+										<td class="text-base-content">{
+											new Intl.DateTimeFormat('default', {
+												month: "long",
+												day: "numeric"
+											}).format(date)
+										 }</td>
+										<td class="text-base-content">{ 
+											new Intl.DateTimeFormat('default', {
+												hour: "numeric",
+												minute: "2-digit",
+												hour12: true
+											}).format(date)
+										}</td>
 									</tr>
 								{/each}
 							</tbody>
