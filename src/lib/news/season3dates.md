@@ -19,3 +19,5 @@ Saturday 4th of November, at 5pm
 *All times shown in EST, you can view them in your timezone at the [front page](https://www.mcwipeout.com/)*
 
 *The events take place after the upcoming Australia/Europe day light savings, so these times may be slightly inacurate until this happens!*
+
+![Season 3 dates](/background-img/s3dates.png)
