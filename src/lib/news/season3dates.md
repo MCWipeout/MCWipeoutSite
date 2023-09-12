@@ -2,7 +2,7 @@
 title: "Season 3 Date Announcements"
 date: "2023-09-11"
 image: "/background-img/newhub.png"
-description: "The dates for Season 3 of MCWipeout are released! Here's what you need to know"
+description: "The dates for Season 3 of MCWipeout are released! Here's what you need to know."
 ---
 The production of Season 3 is well underway, and we have finally announced the official dates for this season!
 
