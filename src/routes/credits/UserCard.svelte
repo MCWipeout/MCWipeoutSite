@@ -20,9 +20,13 @@
     const { name, avatarPath, href, description, socials } = user;
 </script>
 
-<div class="flex flex-col items-center w-64">
+<div class="flex flex-col items-center w-32 md:w-64 py-4 rounded-lg">
     <img src={avatarPath} class="h-24 mask" class:mask-circle={applyMask} alt="{name} avatar" />
-    <a {href} class="text-center font-bold mt-4" class:link={href} class:link-hover={href}>{name}</a>
+    {#if socials}
+        <div class="text-center font-bold mt-4">{name}</div>
+    {:else}
+        <a {href} class="text-center font-bold mt-4" class:link={href} class:link-hover={href}>{name}</a>
+    {/if}
     {#if description}
         <p class="text-center">{description}</p>
     {/if}
