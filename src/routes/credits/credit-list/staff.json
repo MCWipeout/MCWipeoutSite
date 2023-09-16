@@ -37,7 +37,10 @@
 		"name": "Stormbits",
 		"href": "https://twitter.com/Stormbitss",
 		"description": "Developer",
-		"avatarPath": "/avatar/avatar-stormbits.webp"
+		"avatarPath": "/avatar/avatar-stormbits.webp",
+		"socials": {
+			"twitter": "https://twitter.com/Stormbitss"
+		}
 	},
 	{
 		"name": "Andrew",
