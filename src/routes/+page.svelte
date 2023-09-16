@@ -117,7 +117,7 @@
 						suggestion!
 					</p>
 					<div class="card-actions justify-end">
-						<a class="btn btn-primary" href="https://forms.gle/7VcZKRHex2WePT2G6">Visit form</a>
+						<a target="_blank" rel="noopener noreferrer" class="btn btn-primary" href="https://forms.gle/7VcZKRHex2WePT2G6">Visit form</a>
 					</div>
 				</div>
 			</div>
@@ -139,7 +139,7 @@
 						signups here.
 					</p>
 					<div class="card-actions justify-end">
-						<a class="btn btn-primary" href="https://www.twitter.com/mc_wipeout">Follow</a>
+						<a target="_blank" rel="noopener noreferrer" class="btn btn-primary" href="https://www.twitter.com/mc_wipeout">Follow</a>
 					</div>
 				</div>
 			</div>
@@ -154,7 +154,7 @@
 						signups here.
 					</p>
 					<div class="card-actions justify-end">
-						<a class="btn btn-primary" href="https://discord.gg/EhuZUzk7Mc">Join</a>
+						<a target="_blank" rel="noopener noreferrer" class="btn btn-primary" href="https://discord.gg/EhuZUzk7Mc">Join</a>
 					</div>
 				</div>
 			</div>
@@ -166,7 +166,7 @@
 					<h2 class="card-title">YouTube</h2>
 					<p>Subscribe to get the best highlights and clips of the event!</p>
 					<div class="card-actions justify-end">
-						<a class="btn btn-primary" href="https://www.youtube.com/@mcwipeout">Subscribe</a>
+						<a target="_blank" rel="noopener noreferrer" class="btn btn-primary" href="https://www.youtube.com/@mcwipeout">Subscribe</a>
 					</div>
 				</div>
 			</div>
