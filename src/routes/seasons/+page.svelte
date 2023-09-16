@@ -1,6 +1,5 @@
-<script>
-	export let data;
-	const { seasonList: SeasonList } = data;
+<script>	
+	import SeasonList from './season-list.json';
 </script>
 
 <div class="max-w-4xl mx-auto my-8 min-h-screen flex flex-col gap-2 px-4 lg:px-0">
