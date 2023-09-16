@@ -15,13 +15,13 @@
             website?: string;
         }
     };
-    export let circleMask = true;
+    export let applyMask = true;
 
     const { name, avatarPath, href, description, socials } = user;
 </script>
 
 <div class="flex flex-col items-center w-64">
-    <img src={avatarPath} class="h-24 mask" class:mask-circle={circleMask} alt="{name} avatar" />
+    <img src={avatarPath} class="h-24 mask" class:mask-circle={applyMask} alt="{name} avatar" />
     <a {href} class="text-center font-bold mt-4" class:link={href} class:link-hover={href}>{name}</a>
     {#if description}
         <p class="text-center">{description}</p>
