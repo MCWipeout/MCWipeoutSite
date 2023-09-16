@@ -3,18 +3,35 @@
 		"name": "J48",
 		"href": "https://solo.to/j48",
 		"description": "Organizer",
-		"avatarPath": "/avatar/avatar-j48.webp"
+		"avatarPath": "/avatar/avatar-j48.webp",
+		"socials": {
+			"twitter": "https://twitter.com/J48Gaming",
+			"twitch": "https://twitch.tv/J48_Gaming",
+			"youtube": "https://www.youtube.com/J48Gaming"
+		}
 	},
 	{
 		"name": "bumpyJake",
 		"href": "https://bumpyjake.com/",
 		"description": "Co-organizer",
-		"avatarPath": "/avatar/avatar-bumpyjake.webp"
+		"avatarPath": "/avatar/avatar-bumpyjake.webp",
+		"socials": {
+			"twitter": "https://twitter.com/bumpyJake",
+			"twitch": "https://www.twitch.tv/bumpyJake",
+			"youtube": "https://www.youtube.com/bumpyjake",
+			"instagram": "https://www.instagram.com/bumpyjake/",
+			"github": "https://github.com/bumpyjake",
+			"website": "https://bumpyjake.com/"
+		}
 	},
 	{
 		"name": "NotNexus",
 		"description": "Game Design & Ideation",
-		"avatarPath": "/avatar/avatar-notnexus.webp"
+		"avatarPath": "/avatar/avatar-notnexus.webp",
+		"socials": {
+			"twitter": "https://twitter.com/RealNotNexus",
+			"twitch": "https://www.twitch.tv/realnotnexus"
+		}
 	},
 	{
 		"name": "Stormbits",
@@ -25,7 +42,15 @@
 	{
 		"name": "Andrew",
 		"description": "Developer",
-		"avatarPath": "/avatar/avatar-andrew.webp"
+		"avatarPath": "/avatar/avatar-andrew.webp",
+		"socials": {
+			"twitter": "https://twitter.com/exhiraku",
+			"twitch": "https://twitch.tv/exhiraku",
+			"youtube": "https://youtube.com/exhiraku",
+			"instagram": "https://instagram.com/andehx",
+			"github": "https://github.com/exhiraku",
+			"website": "https://andeh.uk"
+		}
 	},
 	{
 		"name": "VimHax",
@@ -35,7 +60,12 @@
 	{
 		"name": "Raf",
 		"description": "Builder",
-		"avatarPath": "/avatar/avatar-raf.webp"
+		"avatarPath": "/avatar/avatar-raf.webp",
+		"socials": {
+			"twitter": "https://twitter.com/RafalSzuba",
+			"youtube": "https://www.youtube.com/DuckyProductionsOfficial",
+			"website": "https://rafalszuba.com"
+		}
 	},
 	{
 		"name": "PROP",
@@ -60,18 +90,31 @@
 	{
 		"name": "dGc",
 		"description": "Builder & Sound Design",
-		"avatarPath": "/avatar/avatar-dgc.webp"
+		"avatarPath": "/avatar/avatar-dgc.webp",
+		"socials": {
+			"twitter": "https://twitter.com/dGcYT_",
+			"twitch": "https://twitch.tv/dgc22",
+			"youtube": "https://youtube.com/dGc22"
+		}
 	},
 	{
 		"name": "theinnerdomain",
 		"href": "https://twitter.com/Theinnerdomain",
 		"avatarPath": "/avatar/avatar-theinnerdomain.webp",
-		"description": "Sound Design"
+		"description": "Sound Design",
+		"socials": {
+			"twitter": "https://twitter.com/Theinnerdomain",
+			"youtube": "https://youtube.com/channel/UCnpvqQ51faK5tGfnX4kbb7A"
+		}
 	},
 	{
 		"name": "soup57",
 		"description": "Art",
-		"avatarPath": "/avatar/avatar-soup57.webp"
+		"avatarPath": "/avatar/avatar-soup57.webp",
+		"socials": {
+			"twitter": "https://twitter.com/soupmakestweets",
+			"youtube": "https://youtube.com/@soup57"
+		}
 	},
 	{
 		"name": "Zphen",
@@ -81,12 +124,19 @@
 	{
 		"name": "raii",
 		"description": "General Staff",
-		"avatarPath": "/avatar/avatar-raii.webp"
+		"avatarPath": "/avatar/avatar-raii.webp",
+		"socials": {
+			"twitter": "https://twitter.com/_rai2i",
+			"twitch": "https://www.twitch.tv/rai2i"
+		}
 	},
 	{
 		"name": "Sorbetes",
 		"description": "Website",
-		"avatarPath": "/avatar/avatar-sorbetes.webp"
+		"avatarPath": "/avatar/avatar-sorbetes.webp",
+		"socials": {
+			"github": "https://github.com/Sorbetess"
+		}
 	},
 	{
 		"name": "polar",
