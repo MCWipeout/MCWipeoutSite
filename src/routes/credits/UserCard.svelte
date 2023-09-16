@@ -25,7 +25,7 @@
     {#if socials}
         <div class="text-center font-bold mt-4">{name}</div>
     {:else}
-        <a {href} class="text-center font-bold mt-4" class:link={href} class:link-hover={href}>{name}</a>
+        <a {href} target="_blank" rel="noopener noreferrer" class="text-center font-bold mt-4" class:link={href} class:link-hover={href}>{name}</a>
     {/if}
     {#if description}
         <p class="text-center">{description}</p>
@@ -33,32 +33,32 @@
     {#if socials}
         <div class="flex gap-1">
             {#if socials.twitter}
-                <a href={socials.twitter}>
+                <a target="_blank" rel="noopener noreferrer" href={socials.twitter}>
                     <Icon icon="bxl:twitter" width="24" height="24" />
                 </a>
             {/if}
             {#if socials.twitch}
-                <a href={socials.twitch}>
+                <a target="_blank" rel="noopener noreferrer" href={socials.twitch}>
                     <Icon icon="bxl:twitch" width="24" height="24" />
                 </a>
             {/if}
             {#if socials.youtube}
-                <a href={socials.youtube}>
+                <a target="_blank" rel="noopener noreferrer" href={socials.youtube}>
                     <Icon icon="bxl:youtube" width="24" height="24" />
                 </a>
             {/if}
             {#if socials.instagram}
-                <a href={socials.instagram}>
+                <a target="_blank" rel="noopener noreferrer" href={socials.instagram}>
                     <Icon icon="bxl:instagram-alt" width="24" height="24" />
                 </a>
             {/if}
             {#if socials.github}
-                <a href={socials.github}>
+                <a target="_blank" rel="noopener noreferrer" href={socials.github}>
                     <Icon icon="bxl:github" width="24" height="24" />
                 </a>
             {/if}
             {#if socials.website}
-                <a href={socials.website}>
+                <a target="_blank" rel="noopener noreferrer" href={socials.website}>
                     <Icon icon="bx:world" width="24" height="24" />
                 </a>
             {/if}
