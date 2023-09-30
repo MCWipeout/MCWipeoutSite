@@ -68,20 +68,22 @@
 			</div>
 		{/each}
 	</div>
-	<div class="w-full grid lg:grid-cols-2 gap-4">
-		{#each sessionParticipantList as team}
-		<TeamCard
-			teamName={team["Team Name"]}
-			teamColor={team.Colour}
-			players={[
-				team.P1,
-				team.P2,
-				team.P3
-			]}
-			badges={[
-				{ name: team.Session }
-			]}
-		/>
-		{/each}
+	<div class="w-full min-h-screen">
+		<div class="w-full grid lg:grid-cols-2 gap-4">
+			{#each sessionParticipantList as team}
+			<TeamCard
+				teamName={team["Team Name"]}
+				teamColor={team.Colour}
+				players={[
+					team.P1,
+					team.P2,
+					team.P3
+				]}
+				badges={[
+					{ name: team.Session }
+				]}
+			/>
+			{/each}
+		</div>
 	</div>
 </Template>
