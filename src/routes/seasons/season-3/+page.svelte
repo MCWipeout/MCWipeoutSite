@@ -48,7 +48,10 @@
 					team.P3
 				]}
 				badges={[
-					team.Session ? { name: team.Session } : undefined
+					team.Session ? { name: team.Session, color: "red" } : undefined,
+					{ name: `Map 1: ${Math.floor(Math.random() * 90 + 10)}:${Math.floor(Math.random() * 50 + 10)}` },
+					{ name: `Map 2: ${Math.floor(Math.random() * 90 + 10)}:${Math.floor(Math.random() * 50 + 10)}` },
+					{ name: `Map 3: ${Math.floor(Math.random() * 90 + 10)}:${Math.floor(Math.random() * 50 + 10)}` }
 				]}
 			/>
 		{/each}
@@ -80,7 +83,9 @@
 					team.P3
 				]}
 				badges={[
-					{ name: team.Session }
+					{ name: `Map 1: ${Math.floor(Math.random() * 100)}:${Math.floor(Math.random() * 100)}` },
+					{ name: `Map 2: ${Math.floor(Math.random() * 100)}:${Math.floor(Math.random() * 100)}` },
+					{ name: `Map 3: ${Math.floor(Math.random() * 100)}:${Math.floor(Math.random() * 100)}` }
 				]}
 			/>
 			{/each}
