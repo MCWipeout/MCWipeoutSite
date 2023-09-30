@@ -9,6 +9,7 @@
 	<div class="hero-content flex-col lg:flex-row-reverse">
 		<div>
 			<h1 class="text-6xl font-bold text-center">{eventName}</h1> 
+			<slot name="description" />
 		</div>
 	</div>
 </div>
