@@ -6,11 +6,11 @@
 </script>
 
 <div class="hero pt-16 bg-base-100">
-	<div class="hero-content flex-col lg:flex-row-reverse">
+	<div class="hero-content flex-col">
 		<div>
 			<h1 class="text-6xl font-bold text-center">{eventName}</h1> 
-			<slot name="description" />
 		</div>
+		<slot name="description" />
 	</div>
 </div>
 <div class="hero py-16 bg-base-100">

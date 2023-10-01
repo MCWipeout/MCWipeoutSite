@@ -1,32 +1,37 @@
 <script lang="ts">
+	import type { PageData } from './$types';
+
 	import Carousel from '$lib/components/Carousel.svelte';
 	import TeamCard from '$lib/components/TeamCard.svelte';
 
-	// import PlayerData from './data/teams.json';
-	import PlayerData from './data/tableConvert.com_fb4wel.json';
+	import Description from './data/description.md';
 	import EventData from './data/details.json';
 	import Template from '../Template.svelte';
+
+	export let data: PageData;
+
+	const { teamList: PlayerData } = data;
 
 	let randomSample = PlayerData
 		.map(value => ({ value, sort: Math.random() }))
 		.sort((a, b) => a.sort - b.sort)
 		.map(({ value }) => value)
-		.slice(0, 10)
+		.slice(0, 10);
 
 	const finalists = randomSample;
 	const participants = PlayerData;
 
-	const sessions = [
-		"Session 1",
-		"Session 2",
-		"Session 3"
-	]
-	let activeTab = "Session 1";
+	const sessions = Array.from(new Set(participants.map((t) => t.Session))).filter(s => s).sort(); 
+	let activeTab = sessions[0];
 	$: sessionParticipantList = participants.filter((t) => t.Session == activeTab);
 
-;	let imageArray: string[] = [];
+	let imageArray: string[] = [];
 	for (let i = 0; i < EventData.galleryCount; i++) {
 		imageArray.push(`/background-img/season-2/${i + 1}.webp`);
+	}
+
+	function defaultTime() {
+		return "XX:XX";
 	}
 </script>
 
@@ -34,7 +39,9 @@
 	eventName={EventData.eventName}
 	images={imageArray}
 >
-	<div slot="description" class="text-center">An upgraded MCWipeout, with an all new format and courses.</div>
+	<div slot="description" class="prose">
+		<Description />
+	</div>
 	<h2 class="text-3xl font-bold basis-full">Finalists</h2>
 	<div class="w-full grid lg:grid-cols-2 gap-4">
 		{#each finalists as team, i}
@@ -43,15 +50,15 @@
 				placement={i}
 				teamColor={team.Colour}
 				players={[
-					team.P1,
-					team.P2,
-					team.P3
+					team["P1 Name"].trim() || team["P1"],
+					team["P2 Name"].trim() || team["P2"],
+					team["P3 Name"].trim() || team["P3"]
 				]}
 				badges={[
 					team.Session ? { name: team.Session, color: "red" } : undefined,
-					{ name: `Map 1: ${Math.floor(Math.random() * 90 + 10)}:${Math.floor(Math.random() * 50 + 10)}` },
-					{ name: `Map 2: ${Math.floor(Math.random() * 90 + 10)}:${Math.floor(Math.random() * 50 + 10)}` },
-					{ name: `Map 3: ${Math.floor(Math.random() * 90 + 10)}:${Math.floor(Math.random() * 50 + 10)}` }
+					{ name: `Map 1: ${ team["Map 1 Time"].trim() || defaultTime() }` },
+					{ name: `Map 2: ${ team["Map 2 Time"].trim() || defaultTime() }` },
+					{ name: `Map 3: ${ team["Map 3 Time"].trim() || defaultTime() }` }
 				]}
 			/>
 		{/each}
@@ -59,15 +66,15 @@
 	<div class="divider basis-full" />
 	<h2 class="text-3xl font-bold basis-full">Participants</h2>
 	<div class="tabs tabs-boxed">
-		{#each sessions as s}
+		{#each sessions as session}
 			<div 
 				class="tab" 
-				class:tab-active={activeTab == s}
-				style="{activeTab == s ? 'color: hsl(var(--n) / var(--tw-text-opacity))': ''}"
-				on:click={() => {activeTab = s}}
-				on:keypress={() => {activeTab = s}}
+				class:tab-active={activeTab == session}
+				style="{activeTab == session ? 'color: hsl(var(--n) / var(--tw-text-opacity))': ''}"
+				on:click={() => {activeTab = session}}
+				on:keypress={() => {activeTab = session}}
 			>
-				{ s }
+				{ session }
 			</div>
 		{/each}
 	</div>
@@ -78,14 +85,14 @@
 				teamName={team["Team Name"]}
 				teamColor={team.Colour}
 				players={[
-					team.P1,
-					team.P2,
-					team.P3
+					team["P1 Name"].trim() || team["P1"],
+					team["P2 Name"].trim() || team["P2"],
+					team["P3 Name"].trim() || team["P3"]
 				]}
 				badges={[
-					{ name: `Map 1: ${Math.floor(Math.random() * 100)}:${Math.floor(Math.random() * 100)}` },
-					{ name: `Map 2: ${Math.floor(Math.random() * 100)}:${Math.floor(Math.random() * 100)}` },
-					{ name: `Map 3: ${Math.floor(Math.random() * 100)}:${Math.floor(Math.random() * 100)}` }
+					{ name: `Map 1: ${ team["Map 1 Time"].trim() || defaultTime() }` },
+					{ name: `Map 2: ${ team["Map 2 Time"].trim() || defaultTime() }` },
+					{ name: `Map 3: ${ team["Map 3 Time"].trim() || defaultTime() }` }
 				]}
 			/>
 			{/each}
