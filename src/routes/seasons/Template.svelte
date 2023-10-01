@@ -10,6 +10,10 @@
 		<div>
 			<h1 class="text-6xl font-bold text-center">{eventName}</h1> 
 		</div>
+	</div>
+</div>
+<div class="hero pt-16 bg-base-200">
+	<div class="hero-content flex-col w-full items-start">
 		<slot name="description" />
 	</div>
 </div>
