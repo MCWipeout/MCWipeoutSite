@@ -50,16 +50,17 @@
 				placement={i}
 				teamColor={team.Colour}
 				players={[
-					team["P1 Name"].trim() || team["P1"],
-					team["P2 Name"].trim() || team["P2"],
-					team["P3 Name"].trim() || team["P3"]
+					team["P1 Name"]?.trim() || team["P1"],
+					team["P2 Name"]?.trim() || team["P2"],
+					team["P3 Name"]?.trim() || team["P3"]
 				]}
 				badges={[
-					team.Session ? { name: team.Session, color: "red" } : undefined,
-					{ name: `Map 1: ${ team["Map 1 Time"].trim() || defaultTime() }` },
-					{ name: `Map 2: ${ team["Map 2 Time"].trim() || defaultTime() }` },
-					{ name: `Map 3: ${ team["Map 3 Time"].trim() || defaultTime() }` }
+					// team.Session ? { name: team.Session, color: "red" } : undefined,
+					{ name: `Map 1: ${ team["Map 1 Time"]?.trim() || defaultTime() }` },
+					{ name: `Map 2: ${ team["Map 2 Time"]?.trim() || defaultTime() }` },
+					{ name: `Map 3: ${ team["Map 3 Time"]?.trim() || defaultTime() }` }
 				]}
+				largeDisplay={ team["Map 4 Time"]?.trim() || defaultTime() }
 			/>
 		{/each}
 	</div>
