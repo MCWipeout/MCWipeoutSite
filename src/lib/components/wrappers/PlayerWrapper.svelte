@@ -3,9 +3,10 @@
 
 	export let uuid: string | undefined = undefined;
 	export let name: string | undefined = undefined;
+	export let href: string | undefined = undefined;
 </script>
 
-<div class="flex items-center gap-2">
+<a class="flex items-center gap-2" {href} target="_blank" rel="noopener noreferrer">
 	{#if uuid}
 		<img
 			src="https://mc-heads.net/avatar/{uuid}/128"
@@ -19,4 +20,4 @@
 	<span class="truncate hover:overflow-visible">
 		{name ?? 'TBA'}
 	</span>
-</div>
+</a>

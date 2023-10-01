@@ -50,9 +50,9 @@
 				placement={i}
 				teamColor={team.Colour}
 				players={[
-					team["P1 Name"]?.trim() || team["P1"],
-					team["P2 Name"]?.trim() || team["P2"],
-					team["P3 Name"]?.trim() || team["P3"]
+					{ name: team["P1 Name"]?.trim() || team["P1"], href: team["P1 Twitter"] },
+					{ name: team["P2 Name"]?.trim() || team["P2"], href: team["P2 Twitter"] },
+					{ name: team["P3 Name"]?.trim() || team["P3"], href: team["P3 Twitter"] },
 				]}
 				badges={[
 					// team.Session ? { name: team.Session, color: "red" } : undefined,
@@ -86,9 +86,9 @@
 				teamName={team["Team Name"]}
 				teamColor={team.Colour}
 				players={[
-					team["P1 Name"].trim() || team["P1"],
-					team["P2 Name"].trim() || team["P2"],
-					team["P3 Name"].trim() || team["P3"]
+					{ name: team["P1 Name"]?.trim() || team["P1"], href: team["P1 Twitter"] },
+					{ name: team["P2 Name"]?.trim() || team["P2"], href: team["P2 Twitter"] },
+					{ name: team["P3 Name"]?.trim() || team["P3"], href: team["P3 Twitter"] },
 				]}
 				badges={[
 					{ name: `Map 1: ${ team["Map 1 Time"].trim() || defaultTime() }` },
