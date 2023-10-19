@@ -29,6 +29,10 @@
 	}
 </script>
 
+<svelte:head>
+	<title>Season 3 - MCWipeout</title>
+</svelte:head>
+
 <Template eventName={EventData.eventName}>
 	<div slot="description" class="prose">
 		<Description />
