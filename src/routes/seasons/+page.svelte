@@ -1,13 +1,22 @@
-<script>	
+<script>
 	import SeasonList from './season-list.json';
 </script>
+
+<svelte:head>
+	<title>Seasons - MCWipeout</title>
+</svelte:head>
 
 <div class="max-w-4xl mx-auto my-8 min-h-screen flex flex-col gap-2 px-4 lg:px-0">
 	<h1 class="text-center text-5xl font-bold mb-4">Past Seasons</h1>
 	{#each SeasonList as season}
 		<div class="card bg-base-200 shadow-xl">
 			<figure>
-				<img src={season.image} alt="{season.title} banner" class="max-h-32 w-full object-cover" loading="lazy" />
+				<img
+					src={season.image}
+					alt="{season.title} banner"
+					class="max-h-32 w-full object-cover"
+					loading="lazy"
+				/>
 			</figure>
 			<div class="card-body">
 				<h2 class="card-title">{season.title}</h2>
