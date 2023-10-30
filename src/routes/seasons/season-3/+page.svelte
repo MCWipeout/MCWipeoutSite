@@ -10,7 +10,8 @@
 
 	export let data: PageData;
 
-	const { teamList: PlayerData } = data;
+	const { teamList: PlayerData, playerTimes, teamTimes } = data;
+
 	const participants = PlayerData;
 
 	const sessions = Array.from(new Set(participants.map((t) => t.Session)))

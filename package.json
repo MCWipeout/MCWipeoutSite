@@ -11,7 +11,8 @@
 		"check:watch": "svelte-kit sync && svelte-check --tsconfig ./tsconfig.json --watch",
 		"test:unit": "vitest",
 		"lint": "prettier --plugin-search-dir . --check . && eslint .",
-		"format": "prettier --plugin-search-dir . --write ."
+		"format": "prettier --plugin-search-dir . --write .",
+		"postinstall": "prisma generate"
 	},
 	"devDependencies": {
 		"@iconify/svelte": "^3.0.0",
@@ -47,9 +48,11 @@
 	"dependencies": {
 		"@beyonk/async-script-loader": "^2.2.2",
 		"@beyonk/svelte-google-analytics": "^2.6.4",
+		"@prisma/client": "^5.5.2",
 		"csv-parse": "^5.3.10",
 		"daisyui": "^2.30.0",
 		"echarts": "^5.3.3",
+		"prisma": "^5.5.2",
 		"fast-average-color": "^9.1.1",
 		"google-auth-library": "^8.9.0",
 		"google-spreadsheet": "^4.1.0",
