@@ -73,7 +73,7 @@ export const load: PageLoad = async () => {
 		playerTimesPromise,
 		teamTimesPromise
 	]);
-	console.log(teamList[0]);
+
 	return {
 		teamList,
 		playerTimes,
