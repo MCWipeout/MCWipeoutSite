@@ -51,6 +51,8 @@
 		"daisyui": "^2.30.0",
 		"echarts": "^5.3.3",
 		"fast-average-color": "^9.1.1",
+		"google-auth-library": "^8.9.0",
+		"google-spreadsheet": "^4.1.0",
 		"theme-change": "^2.2.0"
 	}
 }

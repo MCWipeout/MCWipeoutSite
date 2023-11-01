@@ -4,7 +4,10 @@
     export let teamName: string;
     export let teamColor: string | undefined = undefined;
     export let placement: number | undefined = undefined;
-    export let players: string[];
+    export let players: (string | {
+        name: string,
+        href: string
+    })[];
     export let badges: ({
         name: string,
         color?: string
@@ -23,7 +26,11 @@
         <div class="flex flex-wrap gap-2">
             {#each players as player}
                 <div class="rounded-lg p-2 outline outline-1 outline-base-300 bg-base-300">
-                    <PlayerWrapper name={ player } uuid={ player } />
+                    {#if typeof player == "string"}
+                        <PlayerWrapper name={ player } uuid={ player } />
+                    {:else}
+                        <PlayerWrapper name={ player.name } uuid={ player.name } href={ player.href } />
+                    {/if}
                 </div>
             {/each}
         </div>

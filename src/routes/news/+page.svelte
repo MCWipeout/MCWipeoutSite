@@ -2,6 +2,10 @@
 	export let data;
 </script>
 
+<svelte:head>
+	<title>News - MCWipeout</title>
+</svelte:head>
+
 <div class="max-w-4xl mx-auto my-8 min-h-screen flex flex-col gap-4 px-4 lg:px-0">
 	<h1 class="text-center text-5xl font-bold mb-4">Blog</h1>
 	{#each data.posts as post}
