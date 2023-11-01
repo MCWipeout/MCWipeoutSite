@@ -8,6 +8,18 @@ import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { JWT } from 'google-auth-library';
 
 export const load: PageLoad = async () => {
+	if (!env.CREDS) {
+		throw new Error('Environment variable CREDS not found');
+	}
+
+	if (!env.SPREADSHEET_ID) {
+		throw new Error('Environment variable SPREADSHEET_ID not found');
+	}
+
+	if (!env.WORKSHEET_ID) {
+		throw new Error('Environment variable WORKSHEET_ID not found');
+	}
+
 	const GOOGLE_CREDENTIALS = JSON.parse(env.CREDS);
 
 	const SCOPES = ['https://www.googleapis.com/auth/spreadsheets'];
