@@ -11,7 +11,7 @@
 	<div class="hero-content text-center text-neutral-content flex flex-col">
 		<div>
 			<div class="flex flex-col lg:flex-row max-w-3xl items-center gap-8">
-				<img src="logo.webp" class="max-h-36" />
+				<img src="logo.webp" class="max-h-36" alt="MC Wipeout logo" />
 				<svg
 					fill="#ffffff"
 					height="50px"
@@ -32,13 +32,17 @@
 						/>
 					</g></svg
 				>
-				<img src="/voicemod-contest/voicemod-logo.png" class="max-h-36" />
+				<img src="/voicemod-contest/voicemod-logo.png" class="max-h-36" alt="Voicemod logo" />
 			</div>
 			<h1 class="mb-5 mt-8 text-5xl font-bold max-w-md mx-auto">
 				MCWipeout fans can win an Elgato Stream Deck by submitting a Voicemod clip!
 			</h1>
 			<p class="mb-5 max-w-md mx-auto">
-				Tweet your clips with <span class="font-bold">#MCWVoiceMod</span> to enter our raffle.
+				Win one of two Elgato Stream Decks courtesy of our event sponsor by Tweeting your best
+				gaming clip using Voicemod!
+			</p>
+			<p class="mb-5 max-w-md mx-auto">
+				Competition will close <span class="font-bold">November 10th 2023 at 12pm EST</span>.
 			</p>
 			<a
 				class="btn btn-primary"
