@@ -13,10 +13,10 @@
 	let latestNews = data.posts[0];
 
 	const eventDates = [
-		new Date("11/03/2023 07:00:00 AM EST"),
-		new Date("11/03/2023 02:00:00 PM EST"),
-		new Date("11/04/2023 05:00:00 PM EST"),
-	]
+		new Date('11/03/2023 07:00:00 AM EST'),
+		new Date('11/03/2023 02:00:00 PM EST'),
+		new Date('11/04/2023 05:00:00 PM EST')
+	];
 </script>
 
 <svelte:head>
@@ -27,6 +27,13 @@
 </svelte:head>
 
 <WipeoutHero />
+<div class="hero" style="background-image: url('/background-img/main/1.webp');">
+	<div class="hero-overlay bg-opacity-60" />
+	<div class="hero-content text-center text-neutral-content flex flex-col lg:flex-row py-8">
+		<h1 class="text-4xl font-bold">Join the MCWipeout x Voicemod clip competition!</h1>
+		<a class="btn btn-primary" href="/voicemod#voicemodHero">More info</a>
+	</div>
+</div>
 <div class="hero py-16 bg-base-200">
 	<div class="hero-content flex-col lg:flex-row-reverse">
 		<iframe
@@ -40,9 +47,9 @@
 		<div>
 			<h1 class="text-5xl font-bold">What is MCWipeout?</h1>
 			<p class="py-6">
-				MCWipeout is a series organized by J48 and bumpyJake that first began on January 1,
-				2022. Creators from all over the globe are invited to participate in an obstacle course and
-				can potentially win prizes if they make it in the fastest time possible.
+				MCWipeout is a series organized by J48 and bumpyJake that first began on January 1, 2022.
+				Creators from all over the globe are invited to participate in an obstacle course and can
+				potentially win prizes if they make it in the fastest time possible.
 			</p>
 			<a href="/seasons" class="btn btn-primary">View Past Seasons</a>
 		</div>
@@ -54,7 +61,7 @@
 		<div class="grid lg:grid-cols-3 gap-4">
 			<div class="card max-w-96 bg-base-100 shadow-xl">
 				<figure class="bg bg-[#1DA1F2] max-h-32">
-					<img src={latestNews.meta.image} alt="Latest news banner" loading="lazy"/>
+					<img src={latestNews.meta.image} alt="Latest news banner" loading="lazy" />
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">
@@ -70,7 +77,11 @@
 			</div>
 			<div class="card max-w-96 bg-base-100 shadow-xl image-full">
 				<figure class="bg bg-[#1DA1F2]">
-					<img src="/background-img/women-of-mcwipeout/banner.webp" alt="Event Schedule Banner" loading="lazy" />
+					<img
+						src="/background-img/women-of-mcwipeout/banner.webp"
+						alt="Event Schedule Banner"
+						loading="lazy"
+					/>
 				</figure>
 				<div class="card-body">
 					<h2 class="card-title">Event Schedule</h2>
@@ -86,19 +97,19 @@
 							<tbody class="overflow-y-auto">
 								{#each eventDates as date}
 									<tr>
-										<td class="text-base-content">{
-											new Intl.DateTimeFormat('default', {
-												month: "long",
-												day: "numeric"
-											}).format(date)
-										 }</td>
-										<td class="text-base-content">{ 
-											new Intl.DateTimeFormat('default', {
-												hour: "numeric",
-												minute: "2-digit",
+										<td class="text-base-content"
+											>{new Intl.DateTimeFormat('default', {
+												month: 'long',
+												day: 'numeric'
+											}).format(date)}</td
+										>
+										<td class="text-base-content"
+											>{new Intl.DateTimeFormat('default', {
+												hour: 'numeric',
+												minute: '2-digit',
 												hour12: true
-											}).format(date)
-										}</td>
+											}).format(date)}</td
+										>
 									</tr>
 								{/each}
 							</tbody>
@@ -117,7 +128,12 @@
 						suggestion!
 					</p>
 					<div class="card-actions justify-end">
-						<a target="_blank" rel="noopener noreferrer" class="btn btn-primary" href="https://forms.gle/7VcZKRHex2WePT2G6">Visit form</a>
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-primary"
+							href="https://forms.gle/7VcZKRHex2WePT2G6">Visit form</a
+						>
 					</div>
 				</div>
 			</div>
@@ -139,7 +155,12 @@
 						signups here.
 					</p>
 					<div class="card-actions justify-end">
-						<a target="_blank" rel="noopener noreferrer" class="btn btn-primary" href="https://www.twitter.com/mc_wipeout">Follow</a>
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-primary"
+							href="https://www.twitter.com/mc_wipeout">Follow</a
+						>
 					</div>
 				</div>
 			</div>
@@ -154,11 +175,16 @@
 						signups here.
 					</p>
 					<div class="card-actions justify-end">
-						<a target="_blank" rel="noopener noreferrer" class="btn btn-primary" href="https://discord.gg/EhuZUzk7Mc">Join</a>
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-primary"
+							href="https://discord.gg/EhuZUzk7Mc">Join</a
+						>
 					</div>
 				</div>
 			</div>
-			<div class="card card-compact max-w-96 bg-base-100 shadow-xl ">
+			<div class="card card-compact max-w-96 bg-base-100 shadow-xl">
 				<figure class="h-20 bg-[#c4302b] p-4">
 					<img src="/social/youtube.webp" alt="YouTube logo" class="h-full" loading="lazy" />
 				</figure>
@@ -166,7 +192,12 @@
 					<h2 class="card-title">YouTube</h2>
 					<p>Subscribe to get the best highlights and clips of the event!</p>
 					<div class="card-actions justify-end">
-						<a target="_blank" rel="noopener noreferrer" class="btn btn-primary" href="https://www.youtube.com/@mcwipeout">Subscribe</a>
+						<a
+							target="_blank"
+							rel="noopener noreferrer"
+							class="btn btn-primary"
+							href="https://www.youtube.com/@mcwipeout">Subscribe</a
+						>
 					</div>
 				</div>
 			</div>
@@ -177,7 +208,7 @@
 	<div class="hero-content flex flex-col items-stretch lg:flex-row w-full">
 		<div class="flex flex-col flex-wrap">
 			<h1 class="text-5xl font-bold grow mb-4 text-center">Screenshots</h1>
-			<Carousel images={imageArray} bind:carouselHeight={screenshotHeroHeight}/>
+			<Carousel images={imageArray} bind:carouselHeight={screenshotHeroHeight} />
 		</div>
 		<!-- <div class="lg:basis-1/3 w-full flex flex-col justify-items-stretch">
 			<h1 class="text-5xl font-bold grow mb-4 text-center">Tweets</h1>
