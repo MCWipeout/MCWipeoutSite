@@ -34,7 +34,7 @@
 				>
 				<img src="/voicemod-contest/voicemod-logo.png" class="max-h-36" alt="Voicemod logo" />
 			</div>
-			<h1 class="mb-5 mt-8 text-5xl font-bold max-w-md mx-auto">
+			<h1 class="mb-5 mt-8 text-5xl font-bold max-w-3xl mx-auto">
 				MCWipeout fans can win an Elgato Stream Deck by submitting a Voicemod clip!
 			</h1>
 			<p class="mb-5 max-w-md mx-auto">
