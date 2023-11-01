@@ -4,7 +4,7 @@
 	const navItems = [
 		{ label: 'Home', href: '/' },
 		{ label: 'Seasons', href: '/seasons' },
-		{ label: 'Voicemod', href: '/voicemod' },
+		{ label: 'Voicemod', href: '/voicemod#voicemodHero' },
 		{ label: 'News', href: '/news' },
 		{ label: 'Credits', href: '/credits' }
 	];

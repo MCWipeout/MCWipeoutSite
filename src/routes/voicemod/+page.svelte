@@ -1,6 +1,14 @@
-<div class="hero min-h-screen" style="background-image: url('/background-img/main/1.webp');">
+<script lang="ts">
+	import TermsAndConditions from './data/terms-and-conditions.md';
+</script>
+
+<div
+	class="hero min-h-screen"
+	style="background-image: url('/background-img/main/1.webp');"
+	id="voicemodHero"
+>
 	<div class="hero-overlay bg-opacity-60" />
-	<div class="hero-content text-center text-neutral-content">
+	<div class="hero-content text-center text-neutral-content flex flex-col">
 		<div>
 			<div class="flex flex-col lg:flex-row max-w-3xl items-center gap-8">
 				<img src="logo.webp" class="max-h-36" />
@@ -27,64 +35,25 @@
 				<img src="/voicemod-contest/voicemod-logo.png" class="max-h-36" />
 			</div>
 			<h1 class="mb-5 mt-8 text-5xl font-bold max-w-md mx-auto">
-				MCWipeout fans and creators can win up to *insert money here*!
+				MCWipeout fans can win an Elgato Stream Deck by submitting a Voicemod clip!
 			</h1>
 			<p class="mb-5 max-w-md mx-auto">
-				Submit a 30-second clip of you using VoiceMod to enter our raffle.
+				Tweet your clips with <span class="font-bold">#MCWVoiceMod</span> to enter our raffle.
 			</p>
-			<button class="btn btn-primary">Submit a Clip</button>
+			<a
+				class="btn btn-primary"
+				target="_blank"
+				rel="noopener noreferrer"
+				href="https://twitter.com/intent/tweet?hashtags=MCWVoicemod">Tweet your clip</a
+			>
 		</div>
+		<a class="link link-hover" href="#termsAndConditions">Terms and Conditions</a>
 	</div>
 </div>
-<div class="hero min-h-screen bg-base-200">
+<div class="hero min-h-screen bg-base-200" id="termsAndConditions">
 	<div class="hero-content">
 		<div class="max-w-prose prose">
-			<h1 class="font-bold">Terms and Conditions</h1>
-			<p>
-				Provident cupiditate voluptatem et in. Quaerat fugiat ut assumenda excepturi exercitationem
-				quasi. In deleniti eaque aut repudiandae et a id nisi.
-			</p>
-			<ol>
-				<li>
-					Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a,
-					ultricies in, diam. Sed arcu. Cras consequat
-				</li>
-				<li>
-					Praesent dapibus, neque id cursus faucibus, tortor neque egestas augue, eu vulputate magna
-					eros eu erat. Aliquam erat volutpat. Nam dui mi, tincidunt quis, accumsan porttitor,
-					facilisis luctus, metus.
-				</li>
-				<li>
-					Phasellus ultrices nulla quis nibh. Quisque a lectus. Donec consectetuer ligula vulputate
-					sem tristique cursus. Nam nulla quam, gravida non, commodo a, sodales sit amet, nisi.
-				</li>
-				<li>
-					Pellentesque fermentum dolor. Aliquam quam lectus, facilisis auctor, ultrices ut,
-					elementum vulputate, nunc.
-				</li>
-				<li>
-					Sed adipiscing ornare risus. Morbi est est, blandit sit amet, sagittis vel, euismod vel,
-					velit. Pellentesque egestas sem. Suspendisse commodo ullamcorper magna.
-				</li>
-				<li>
-					Nulla sed leo. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per
-					inceptos himenaeos.
-				</li>
-				<li>Fusce lacinia arcu et nulla. Nulla vitae mauris non felis mollis faucibus.</li>
-				<li>
-					Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Donec odio. Quisque volutpat
-					mattis eros. Nullam malesuada erat ut turpis. Suspendisse urna nibh, viverra non, semper
-					suscipit, posuere a, pede.
-				</li>
-				<li>
-					Donec nec justo eget felis facilisis fermentum. Aliquam porttitor mauris sit amet orci.
-					Aenean dignissim pellentesque felis.
-				</li>
-				<li>
-					Morbi in sem quis dui placerat ornare. Pellentesque odio nisi, euismod in, pharetra a,
-					ultricies in, diam. Sed arcu. Cras consequat.
-				</li>
-			</ol>
+			<TermsAndConditions />
 		</div>
 	</div>
 </div>
