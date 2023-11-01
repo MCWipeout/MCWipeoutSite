@@ -4,6 +4,7 @@
 	const navItems = [
 		{ label: 'Home', href: '/' },
 		{ label: 'Seasons', href: '/seasons' },
+		{ label: 'Voicemod', href: '/voicemod#voicemodHero' },
 		{ label: 'News', href: '/news' },
 		{ label: 'Credits', href: '/credits' }
 	];
@@ -49,7 +50,12 @@
 		</div>
 		<div class="navbar-end hidden lg:flex">
 			{#each navItems as { href, label }}
-				<a class="btn btn-ghost" {href} data-sveltekit-preload-code="hover" data-sveltekit-preload-data="hover">{label}</a>
+				<a
+					class="btn btn-ghost"
+					{href}
+					data-sveltekit-preload-code="hover"
+					data-sveltekit-preload-data="hover">{label}</a
+				>
 			{/each}
 			<ThemeSelect />
 		</div>
