@@ -10,15 +10,13 @@
 
 	export let data: PageData;
 
-	const { teamList: PlayerData, playerTimes, teamTimes } = data;
+	const { processedTeamList } = data;
 
-	const participants = PlayerData;
-
-	const sessions = Array.from(new Set(participants.map((t) => t.Session)))
+	const sessions = Array.from(new Set(processedTeamList.map((t) => t.session)))
 		.filter((s) => s)
 		.sort();
 	let activeTab = sessions[0];
-	$: sessionParticipantList = participants.filter((t) => t.Session == activeTab);
+	$: sessionParticipantList = processedTeamList.filter((t) => t.session == activeTab);
 
 	let imageArray: string[] = [];
 	// for (let i = 0; i < EventData.galleryCount; i++) {
@@ -79,17 +77,15 @@
 			</div>
 		{/each}
 	</div>
-	<div class="w-full min-h-screen">
-		<div class="w-full grid lg:grid-cols-2 gap-4">
+	<div class="min-h-screen w-full">
+		<div class="grid lg:grid-cols-2 gap-4 w-full">
 			{#each sessionParticipantList as team}
 				<TeamCard
-					teamName={team['Team Name']}
-					teamColor={team.Colour}
-					players={[
-						{ name: team['P1 Name']?.trim() || team['P1'], href: team['P1 Twitter'] },
-						{ name: team['P2 Name']?.trim() || team['P2'], href: team['P2 Twitter'] },
-						{ name: team['P3 Name']?.trim() || team['P3'], href: team['P3 Twitter'] }
-					]}
+					teamName={team.name}
+					teamColor={team.color}
+					players={team.members.map((player) => {
+						return { name: player.username || player.shorthand, href: player.twitter };
+					})}
 				/>
 			{/each}
 		</div>

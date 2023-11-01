@@ -1,4 +1,5 @@
 import type { PageLoad } from '../../$types';
+import type { Team, Player } from './event.types';
 
 import { env } from '$env/dynamic/private';
 
@@ -86,9 +87,123 @@ export const load: PageLoad = async () => {
 		teamTimesPromise
 	]);
 
+	const processedTeamList: Team[] = teamList.map((team) => {
+		const isFinalist = team['Finalist?'].toLowerCase() == 'true';
+		const teamId: string = team['Shorthand'];
+
+		const playerOneTimes = playerTimes.find((p) => p.player.replace('-', '') === team['P1 UUID']);
+		const playerTwoTimes = playerTimes.find((p) => p.player.replace('-', '') === team['P2 UUID']);
+		const playerThreeTimes = playerTimes.find((p) => p.player.replace('-', '') === team['P3 UUID']);
+
+		const teamTimesRecords = teamTimes.find((t) => t.teamId === teamId);
+
+		const teamMembers: Player[] = [
+			{
+				shorthand: team['P1'],
+				twitter: team['P1 Twitter'],
+				username: team['P1 Name'],
+				uuid: team['P1 UUID'],
+				timeZone: team['P1 TZ'],
+				mapTimes: [
+					{
+						mapName: 'Map 1',
+						mapTime: playerOneTimes?.map_1_time || 'DNF'
+					},
+					{
+						mapName: 'Map 2',
+						mapTime: playerOneTimes?.map_2_time || 'DNF'
+					},
+					{
+						mapName: 'Map 3',
+						mapTime: playerOneTimes?.map_3_time || 'DNF'
+					},
+					{
+						mapName: 'Map 4',
+						mapTime: playerOneTimes?.map_4_time || 'DNF'
+					}
+				]
+			},
+			{
+				shorthand: team['P2'],
+				twitter: team['P2 Twitter'],
+				username: team['P2 Name'],
+				uuid: team['P2 UUID'],
+				timeZone: team['P2 TZ'],
+				mapTimes: [
+					{
+						mapName: 'Map 1',
+						mapTime: playerTwoTimes?.map_1_time || 'DNF'
+					},
+					{
+						mapName: 'Map 2',
+						mapTime: playerTwoTimes?.map_2_time || 'DNF'
+					},
+					{
+						mapName: 'Map 3',
+						mapTime: playerTwoTimes?.map_3_time || 'DNF'
+					},
+					{
+						mapName: 'Map 4',
+						mapTime: playerTwoTimes?.map_4_time || 'DNF'
+					}
+				]
+			},
+			{
+				shorthand: team['P3'],
+				twitter: team['P3 Twitter'],
+				username: team['P3 Name'],
+				uuid: team['P3 UUID'],
+				timeZone: team['P3 TZ'],
+				mapTimes: [
+					{
+						mapName: 'Map 1',
+						mapTime: playerThreeTimes?.map_1_time || 'DNF'
+					},
+					{
+						mapName: 'Map 2',
+						mapTime: playerThreeTimes?.map_2_time || 'DNF'
+					},
+					{
+						mapName: 'Map 3',
+						mapTime: playerThreeTimes?.map_3_time || 'DNF'
+					},
+					{
+						mapName: 'Map 4',
+						mapTime: playerThreeTimes?.map_4_time || 'DNF'
+					}
+				]
+			}
+		];
+
+		return {
+			name: team['Team Name'],
+			color: team['Colour'],
+			session: team['Session'],
+			id: teamId,
+			members: teamMembers,
+			finalist: isFinalist,
+			mapTimes: [
+				{
+					mapName: 'Map 1',
+					mapTime: teamTimesRecords?.map_1_time || 'DNF'
+				},
+				{
+					mapName: 'Map 2',
+					mapTime: teamTimesRecords?.map_2_time || 'DNF'
+				},
+				{
+					mapName: 'Map 3',
+					mapTime: teamTimesRecords?.map_3_time || 'DNF'
+				},
+				{
+					mapName: 'Map 4',
+					mapTime: teamTimesRecords?.map_4_time || 'DNF'
+				}
+			]
+		};
+	});
+
 	return {
-		teamList,
-		playerTimes,
-		teamTimes
+		processedTeamList
 	};
 };
