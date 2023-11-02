@@ -1,0 +1,24 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+model wipeout_players {
+  player     String  @id @db.VarChar(36)
+  map_1_time BigInt?
+  map_2_time BigInt?
+  map_3_time BigInt?
+  map_4_time BigInt?
+}
+
+model wipeout_teams {
+  teamId     String  @id @db.VarChar(32)
+  map_1_time BigInt?
+  map_2_time BigInt?
+  map_3_time BigInt?
+  map_4_time BigInt?
+}

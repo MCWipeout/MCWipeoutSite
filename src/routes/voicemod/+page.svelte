@@ -2,6 +2,10 @@
 	import TermsAndConditions from './data/terms-and-conditions.md';
 </script>
 
+<svelte:head>
+	<title>MCWipeout x Voicemod Clip Competition</title>
+</svelte:head>
+
 <div
 	class="hero min-h-screen"
 	style="background-image: url('/background-img/main/1.webp');"
