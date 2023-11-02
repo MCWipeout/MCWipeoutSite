@@ -55,7 +55,7 @@
 							class="dropdown-content z-[1] menu p-2 shadow bg-base-100 rounded-box w-52"
 						>
 							{#each player.mapTimes as mt}
-								{#if mt.mapTime}
+								{#if mt.mapTime && (mt.mapName !== 'Map 4' || finalist)}
 									<li>{mt.mapName} - {mt.mapTime}</li>
 								{/if}
 							{/each}
