@@ -44,9 +44,9 @@ export const load: PageLoad = async () => {
 		});
 
 	const playerTimeToString = (time: bigint | null): string => {
-		const minutes = (time ?? BigInt(0)) / BigInt(100) / BigInt(60);
-		const seconds = ((time ?? BigInt(0)) / BigInt(100)) % BigInt(60);
-		const milliseconds = (time ?? BigInt(0)) % BigInt(100);
+		const minutes = (time ?? BigInt(0)) / BigInt(1000) / BigInt(60);
+		const seconds = ((time ?? BigInt(0)) / BigInt(1000)) % BigInt(60);
+		const milliseconds = (time ?? BigInt(0)) % BigInt(1000);
 
 		return (
 			(minutes < 10 ? '0' + minutes.toString() : minutes.toString()) +
