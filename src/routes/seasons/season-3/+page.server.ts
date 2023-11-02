@@ -91,9 +91,15 @@ export const load: PageLoad = async () => {
 		const isFinalist = team['Finalist?'].toLowerCase() == 'true';
 		const teamId: string = team['Shorthand'];
 
-		const playerOneTimes = playerTimes.find((p) => p.player.replace('-', '') === team['P1 UUID']);
-		const playerTwoTimes = playerTimes.find((p) => p.player.replace('-', '') === team['P2 UUID']);
-		const playerThreeTimes = playerTimes.find((p) => p.player.replace('-', '') === team['P3 UUID']);
+		const playerOneTimes = playerTimes.find(
+			(p) => p.player.replace(/-/g, '').trim() === team['P1 UUID'].replace(/-/g, '').trim()
+		);
+		const playerTwoTimes = playerTimes.find(
+			(p) => p.player.replace(/-/g, '').trim() === team['P2 UUID'].replace(/-/g, '').trim()
+		);
+		const playerThreeTimes = playerTimes.find(
+			(p) => p.player.replace(/-/g, '').trim() === team['P3 UUID'].replace(/-/g, '').trim()
+		);
 
 		const teamTimesRecords = teamTimes.find((t) => t.teamId === teamId);
 
@@ -107,19 +113,19 @@ export const load: PageLoad = async () => {
 				mapTimes: [
 					{
 						mapName: 'Map 1',
-						mapTime: playerOneTimes?.map_1_time || 'DNF'
+						mapTime: playerOneTimes?.map_1_time || ''
 					},
 					{
 						mapName: 'Map 2',
-						mapTime: playerOneTimes?.map_2_time || 'DNF'
+						mapTime: playerOneTimes?.map_2_time || ''
 					},
 					{
 						mapName: 'Map 3',
-						mapTime: playerOneTimes?.map_3_time || 'DNF'
+						mapTime: playerOneTimes?.map_3_time || ''
 					},
 					{
 						mapName: 'Map 4',
-						mapTime: playerOneTimes?.map_4_time || 'DNF'
+						mapTime: playerOneTimes?.map_4_time || ''
 					}
 				]
 			},
@@ -132,19 +138,19 @@ export const load: PageLoad = async () => {
 				mapTimes: [
 					{
 						mapName: 'Map 1',
-						mapTime: playerTwoTimes?.map_1_time || 'DNF'
+						mapTime: playerTwoTimes?.map_1_time || ''
 					},
 					{
 						mapName: 'Map 2',
-						mapTime: playerTwoTimes?.map_2_time || 'DNF'
+						mapTime: playerTwoTimes?.map_2_time || ''
 					},
 					{
 						mapName: 'Map 3',
-						mapTime: playerTwoTimes?.map_3_time || 'DNF'
+						mapTime: playerTwoTimes?.map_3_time || ''
 					},
 					{
 						mapName: 'Map 4',
-						mapTime: playerTwoTimes?.map_4_time || 'DNF'
+						mapTime: playerTwoTimes?.map_4_time || ''
 					}
 				]
 			},
@@ -157,19 +163,19 @@ export const load: PageLoad = async () => {
 				mapTimes: [
 					{
 						mapName: 'Map 1',
-						mapTime: playerThreeTimes?.map_1_time || 'DNF'
+						mapTime: playerThreeTimes?.map_1_time || ''
 					},
 					{
 						mapName: 'Map 2',
-						mapTime: playerThreeTimes?.map_2_time || 'DNF'
+						mapTime: playerThreeTimes?.map_2_time || ''
 					},
 					{
 						mapName: 'Map 3',
-						mapTime: playerThreeTimes?.map_3_time || 'DNF'
+						mapTime: playerThreeTimes?.map_3_time || ''
 					},
 					{
 						mapName: 'Map 4',
-						mapTime: playerThreeTimes?.map_4_time || 'DNF'
+						mapTime: playerThreeTimes?.map_4_time || ''
 					}
 				]
 			}
@@ -185,23 +191,25 @@ export const load: PageLoad = async () => {
 			mapTimes: [
 				{
 					mapName: 'Map 1',
-					mapTime: teamTimesRecords?.map_1_time || 'DNF'
+					mapTime: teamTimesRecords?.map_1_time || ''
 				},
 				{
 					mapName: 'Map 2',
-					mapTime: teamTimesRecords?.map_2_time || 'DNF'
+					mapTime: teamTimesRecords?.map_2_time || ''
 				},
 				{
 					mapName: 'Map 3',
-					mapTime: teamTimesRecords?.map_3_time || 'DNF'
+					mapTime: teamTimesRecords?.map_3_time || ''
 				},
 				{
 					mapName: 'Map 4',
-					mapTime: teamTimesRecords?.map_4_time || 'DNF'
+					mapTime: teamTimesRecords?.map_4_time || ''
 				}
 			]
 		};
 	});
+
+	console.log(processedTeamList.find((t) => t.name === 'Test Team'));
 
 	return {
 		processedTeamList
