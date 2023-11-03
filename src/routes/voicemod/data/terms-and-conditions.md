@@ -4,7 +4,7 @@
 
 To enter giveaway, Tweet must include #MCWVoicemod.
 
-Clip must be between 10-60 seconds in length, and feature the use of at least one Voicemod tool (soundboard, voice changer etc). The clip must be submitted by the original creator, or with expressed permission from the original creator.
+Clip must be between 30-60 seconds in length, and feature the use of at least one Voicemod tool (soundboard, voice changer etc). The clip must be submitted by the original creator, or with expressed permission from the original creator.
 
 This competition is not exclusive to participants within MC Wipeout, and the clip you submit does not have to be from Minecraft gameplay specifically.
 
