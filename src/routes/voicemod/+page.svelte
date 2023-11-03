@@ -46,7 +46,7 @@
 				gaming clip using Voicemod!
 			</p>
 			<p class="mb-5 max-w-md mx-auto">
-				Competition will close <span class="font-bold">November 10th 2023 at 12pm EST</span>.
+				Competition will close <span class="font-bold">November 7th 2023 at 12pm EST</span>.
 			</p>
 			<a
 				class="btn btn-primary"
