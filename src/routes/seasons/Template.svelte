@@ -31,7 +31,6 @@
 {/if}
 <div class="hero bg-base-200">
 	<div class="hero-content flex flex-wrap w-full items-stretch">
-		<h1 class="text-5xl font-bold basis-full text-center">Leaderboards</h1>
 		<slot />
 	</div>
 </div>

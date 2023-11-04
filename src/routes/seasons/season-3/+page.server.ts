@@ -44,9 +44,13 @@ export const load: PageLoad = async () => {
 		});
 
 	const playerTimeToString = (time: bigint | null): string => {
-		const minutes = (time ?? BigInt(0)) / BigInt(1000) / BigInt(60);
-		const seconds = ((time ?? BigInt(0)) / BigInt(1000)) % BigInt(60);
-		const milliseconds = (time ?? BigInt(0)) % BigInt(1000);
+		if (!time) {
+			return '--:--.--';
+		}
+
+		const minutes = time / BigInt(1000) / BigInt(60);
+		const seconds = (time / BigInt(1000)) % BigInt(60);
+		const milliseconds = time % BigInt(1000);
 
 		return (
 			(minutes < 10 ? '0' + minutes.toString() : minutes.toString()) +
@@ -58,6 +62,7 @@ export const load: PageLoad = async () => {
 	};
 
 	const playerTimesPromise = prisma.wipeout_players.findMany().then((playerTimes) => {
+		console.log(playerTimes);
 		return playerTimes.map((pt) => {
 			return {
 				player: pt.player,
@@ -113,19 +118,19 @@ export const load: PageLoad = async () => {
 				mapTimes: [
 					{
 						mapName: 'Map 1',
-						mapTime: playerOneTimes?.map_1_time || ''
+						mapTime: playerOneTimes?.map_1_time || '--:--.--'
 					},
 					{
 						mapName: 'Map 2',
-						mapTime: playerOneTimes?.map_2_time || ''
+						mapTime: playerOneTimes?.map_2_time || '--:--.--'
 					},
 					{
 						mapName: 'Map 3',
-						mapTime: playerOneTimes?.map_3_time || ''
+						mapTime: playerOneTimes?.map_3_time || '--:--.--'
 					},
 					{
 						mapName: 'Map 4',
-						mapTime: playerOneTimes?.map_4_time || ''
+						mapTime: playerOneTimes?.map_4_time || '--:--.--'
 					}
 				]
 			},
@@ -138,19 +143,19 @@ export const load: PageLoad = async () => {
 				mapTimes: [
 					{
 						mapName: 'Map 1',
-						mapTime: playerTwoTimes?.map_1_time || ''
+						mapTime: playerTwoTimes?.map_1_time || '--:--.--'
 					},
 					{
 						mapName: 'Map 2',
-						mapTime: playerTwoTimes?.map_2_time || ''
+						mapTime: playerTwoTimes?.map_2_time || '--:--.--'
 					},
 					{
 						mapName: 'Map 3',
-						mapTime: playerTwoTimes?.map_3_time || ''
+						mapTime: playerTwoTimes?.map_3_time || '--:--.--'
 					},
 					{
 						mapName: 'Map 4',
-						mapTime: playerTwoTimes?.map_4_time || ''
+						mapTime: playerTwoTimes?.map_4_time || '--:--.--'
 					}
 				]
 			},
@@ -163,19 +168,19 @@ export const load: PageLoad = async () => {
 				mapTimes: [
 					{
 						mapName: 'Map 1',
-						mapTime: playerThreeTimes?.map_1_time || ''
+						mapTime: playerThreeTimes?.map_1_time || '--:--.--'
 					},
 					{
 						mapName: 'Map 2',
-						mapTime: playerThreeTimes?.map_2_time || ''
+						mapTime: playerThreeTimes?.map_2_time || '--:--.--'
 					},
 					{
 						mapName: 'Map 3',
-						mapTime: playerThreeTimes?.map_3_time || ''
+						mapTime: playerThreeTimes?.map_3_time || '--:--.--'
 					},
 					{
 						mapName: 'Map 4',
-						mapTime: playerThreeTimes?.map_4_time || ''
+						mapTime: playerThreeTimes?.map_4_time || '--:--.--'
 					}
 				]
 			}
@@ -191,19 +196,19 @@ export const load: PageLoad = async () => {
 			mapTimes: [
 				{
 					mapName: 'Map 1',
-					mapTime: teamTimesRecords?.map_1_time || ''
+					mapTime: teamTimesRecords?.map_1_time || '--:--.--'
 				},
 				{
 					mapName: 'Map 2',
-					mapTime: teamTimesRecords?.map_2_time || ''
+					mapTime: teamTimesRecords?.map_2_time || '--:--.--'
 				},
 				{
 					mapName: 'Map 3',
-					mapTime: teamTimesRecords?.map_3_time || ''
+					mapTime: teamTimesRecords?.map_3_time || '--:--.--'
 				},
 				{
 					mapName: 'Map 4',
-					mapTime: teamTimesRecords?.map_4_time || ''
+					mapTime: teamTimesRecords?.map_4_time || '--:--.--'
 				}
 			]
 		};
