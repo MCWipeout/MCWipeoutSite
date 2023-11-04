@@ -46,6 +46,7 @@
 </svelte:head>
 
 <Template eventName={EventData.eventName} images={imageArray}>
+	<h1 class="text-5xl font-bold basis-full text-center">Leaderboards</h1>
 	<div class="w-full grid grid-cols-2 gap-4">
 		{#each teams as team, i}
 			<TeamCard

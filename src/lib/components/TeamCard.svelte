@@ -75,7 +75,7 @@
 				{/each}
 			</div>
 		{/if}
-		{#if finalist || largeDisplay}
+		{#if finalist && largeDisplay}
 			<div class="card-actions justify-end">
 				<div class="text-5xl font-bold">{largeDisplay}</div>
 			</div>
