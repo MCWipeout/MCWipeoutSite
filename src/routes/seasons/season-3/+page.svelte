@@ -23,7 +23,7 @@
 	const finalists = processedTeamList.filter((team) => team.finalist);
 
 	let activeGroupSortSetting: 'Team' | 'Individual' = 'Team';
-	const maps = ['Map 1', 'Map 2', 'Map 3', 'Map 4'];
+	const maps = ['Map 1', 'Map 2', 'Map 3'];
 	let activeMapSortSetting: string = maps[0];
 
 	$: sessionParticipantList = processedTeamList.filter((t) => t.session == activeSessionTab);
