@@ -23,7 +23,7 @@
 	const finalists = processedTeamList.filter((team) => team.finalist);
 
 	let activeGroupSortSetting: 'Team' | 'Individual' = 'Team';
-	const maps = ['Map 1', 'Map 2', 'Map 3'];
+	const maps = ['Map 1', 'Map 2', 'Map 3', 'Map 4'];
 	let activeMapSortSetting: string = maps[0];
 
 	$: sessionParticipantList = processedTeamList.filter((t) => t.session == activeSessionTab);
@@ -94,9 +94,6 @@
 								href: player.twitter,
 								mapTimes: player.mapTimes
 							};
-						})}
-						badges={team.mapTimes.slice(0, 3).map((mt) => {
-							return mt.mapTime ? { name: `${mt.mapName} - ${mt.mapTime}` } : undefined;
 						})}
 						finalist={team.finalist}
 						largeDisplay={team.finalist ? team.mapTimes[3].mapTime : 'WITHDRAW'}

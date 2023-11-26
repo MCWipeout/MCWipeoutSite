@@ -8,6 +8,8 @@ import prisma from '$lib/helpers/prismaHelper';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { JWT } from 'google-auth-library';
 
+const REVEAL_MAP_4 = false;
+
 export const load: PageLoad = async () => {
 	if (!env.CREDS) {
 		throw new Error('Environment variable CREDS not found');
@@ -62,7 +64,6 @@ export const load: PageLoad = async () => {
 	};
 
 	const playerTimesPromise = prisma.wipeout_players.findMany().then((playerTimes) => {
-		console.log(playerTimes);
 		return playerTimes.map((pt) => {
 			return {
 				player: pt.player,
@@ -130,7 +131,7 @@ export const load: PageLoad = async () => {
 					},
 					{
 						mapName: 'Map 4',
-						mapTime: playerOneTimes?.map_4_time || '--:--.--'
+						mapTime: REVEAL_MAP_4 ? playerOneTimes?.map_4_time || '--:--.--' : '??:??.??'
 					}
 				]
 			},
@@ -155,7 +156,7 @@ export const load: PageLoad = async () => {
 					},
 					{
 						mapName: 'Map 4',
-						mapTime: playerTwoTimes?.map_4_time || '--:--.--'
+						mapTime: REVEAL_MAP_4 ? playerTwoTimes?.map_4_time || '--:--.--' : '??:??.??'
 					}
 				]
 			},
@@ -180,7 +181,7 @@ export const load: PageLoad = async () => {
 					},
 					{
 						mapName: 'Map 4',
-						mapTime: playerThreeTimes?.map_4_time || '--:--.--'
+						mapTime: REVEAL_MAP_4 ? playerThreeTimes?.map_4_time || '--:--.--' : '??:??.??'
 					}
 				]
 			}
@@ -208,13 +209,13 @@ export const load: PageLoad = async () => {
 				},
 				{
 					mapName: 'Map 4',
-					mapTime: teamTimesRecords?.map_4_time || '--:--.--'
+					mapTime: REVEAL_MAP_4 ? teamTimesRecords?.map_4_time || '--:--.--' : '??:??.??'
 				}
 			]
 		};
 	});
 
-	console.log(processedTeamList.find((t) => t.name === 'Test Team'));
+	processedTeamList[0].finalist = true;
 
 	return {
 		processedTeamList
