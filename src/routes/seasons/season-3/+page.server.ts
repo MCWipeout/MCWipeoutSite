@@ -215,8 +215,6 @@ export const load: PageLoad = async () => {
 		};
 	});
 
-	processedTeamList[0].finalist = true;
-
 	return {
 		processedTeamList
 	};
