@@ -1,7 +1,6 @@
 <script lang="ts">
 	import type { Player, Team } from '../event.types';
 	import PlayerWrapper from '$lib/components/wrappers/PlayerWrapper.svelte';
-	import Icon from '@iconify/svelte';
 
 	export let mapName: string;
 	export let rankingList: Team[] | Player[];
@@ -46,7 +45,16 @@
 								</div>
 								<div>
 									<p>{row.name}</p>
-									<p class="opacity-50">{row.members.map((p) => p.username).join(', ')}</p>
+									<p class="opacity-50">
+										{#each row.members as tm, i}
+											<a
+												target="_blank"
+												rel="noopener noreferrer"
+												class="link link-hover"
+												href={tm.twitter}>{tm.username}</a
+											>{i === row.members.length - 1 ? '' : ', '}
+										{/each}
+									</p>
 								</div>
 							</div>
 						</td>
