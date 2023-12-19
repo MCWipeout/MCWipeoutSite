@@ -8,7 +8,7 @@ import prisma from '$lib/helpers/prismaHelper';
 import { GoogleSpreadsheet } from 'google-spreadsheet';
 import { JWT } from 'google-auth-library';
 
-const REVEAL_MAP_4 = false;
+const REVEAL_MAP_4 = true;
 
 export const load: PageLoad = async () => {
 	if (!env.CREDS) {

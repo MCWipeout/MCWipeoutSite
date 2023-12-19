@@ -28,7 +28,7 @@
 
 <div class="card card-compact card-side bg-base-100 shadow-xl w-full">
 	<figure class="text-neutral w-8 p-4" style="background-color: {teamColor ?? '#1DA1F2'}">
-		{#if placement}
+		{#if largeDisplay !== '--:--.--' && typeof placement === 'number'}
 			{placement + 1}
 		{/if}
 	</figure>

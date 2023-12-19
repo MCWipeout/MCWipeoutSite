@@ -37,6 +37,14 @@
 	function defaultTime() {
 		return 'XX:XX';
 	}
+
+	$: sortedFinalists = finalists.sort((a, b) => {
+		if (a.mapTimes[3].mapTime === '--:--.--' && b.mapTimes[3].mapTime === '--:--.--') return 0;
+		if (a.mapTimes[3].mapTime === '--:--.--') return 1;
+		if (b.mapTimes[3].mapTime === '--:--.--') return -1;
+
+		return a.mapTimes[3].mapTime.localeCompare(b.mapTimes[3].mapTime);
+	});
 </script>
 
 <svelte:head>
@@ -83,7 +91,7 @@
 		{#if finalists.length}
 			<h2 class="text-3xl font-bold basis-full">Finalists</h2>
 			<div class="w-full grid lg:grid-cols-2 gap-4">
-				{#each finalists as team, i}
+				{#each sortedFinalists as team, i}
 					<TeamCard
 						teamName={team.name}
 						teamColor={team.color}
