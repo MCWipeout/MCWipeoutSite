@@ -3,7 +3,8 @@
 		"slug": "season-3",
 		"title": "Season 3",
 		"description": "The third season of MCWipeout is bringing new obstacles, new map themes, and so much more!",
-		"image": "/background-img/season-3/banner.webp"
+		"image": "/background-img/season-3/banner.webp",
+		"hideReadMoreButton": true
 	},
 	{
 		"slug": "season-2",

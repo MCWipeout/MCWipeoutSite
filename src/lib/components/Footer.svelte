@@ -25,7 +25,15 @@
 	<div>
 		<img src="/logo.webp" alt="MCWipeout Logo" draggable="false" class="h-24" />
 		<p>
-			An event by <a target="_blank" rel="noopener noreferrer" class="link link-hover" href="https://solo.to/j48">J48</a> and <a target="_blank" rel="noopener noreferrer" class="link link-hover" href="https://bumpyjake.com/">bumpyJake</a>
+			An event by
+			<a
+				target="_blank"
+				rel="noopener noreferrer"
+				class="link link-hover"
+				href="https://solo.to/j48"
+			>
+				J48
+			</a>
 		</p>
 	</div>
 	{#each footerContent as { id, title, links } (id)}
@@ -33,7 +41,9 @@
 			<span class="footer-title text-base">{title}</span>
 			<div class="flex flex-row gap-4">
 				{#each links as { href, text }}
-					<a target="_blank" rel="noopener noreferrer" class="link link-hover text-base" {href}>{text}</a>
+					<a target="_blank" rel="noopener noreferrer" class="link link-hover text-base" {href}
+						>{text}</a
+					>
 				{/each}
 			</div>
 		</section>
