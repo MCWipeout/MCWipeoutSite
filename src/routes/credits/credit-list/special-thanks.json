@@ -19,5 +19,38 @@
 		"name": "Zeuz",
 		"description": "Player Management",
 		"avatarPath": "/avatar/avatar-zeuz.webp"
+	},
+	{
+		"name": "bumpyJake",
+		"href": "https://bumpyjake.com/",
+		"avatarPath": "/avatar/avatar-bumpyjake.webp",
+		"socials": {
+			"twitter": "https://twitter.com/bumpyJake",
+			"twitch": "https://www.twitch.tv/bumpyJake",
+			"youtube": "https://www.youtube.com/bumpyjake",
+			"instagram": "https://www.instagram.com/bumpyjake/",
+			"github": "https://github.com/bumpyjake",
+			"website": "https://bumpyjake.com/"
+		}
+	},
+	{
+		"name": "NotNexus",
+		"avatarPath": "/avatar/avatar-notnexus.webp",
+		"socials": {
+			"twitter": "https://twitter.com/RealNotNexus",
+			"twitch": "https://www.twitch.tv/realnotnexus"
+		}
+	},
+	{
+		"name": "Stormbits",
+		"href": "https://twitter.com/Stormbitss",
+		"avatarPath": "/avatar/avatar-stormbits.webp",
+		"socials": {
+			"twitter": "https://twitter.com/Stormbitss"
+		}
+	},
+	{
+		"name": "Furgus",
+		"avatarPath": "/avatar/avatar-furgus.webp"
 	}
 ]
